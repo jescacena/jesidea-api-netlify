@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Elintercambiador</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Elintercambiador Open API</h1>
+
+      <!-- Header nav -->
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p>
+      Hosted in http://jesidea.com/cercepois wordpress with Pods:
+      <a href="http://jesidea.com/cercepois/wp-admin">wp-admin</a>
+    </p>
+
+    <section>
+      <h2>Times bus lines</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-680"
+          >
+            times bus 680 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-680</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-684"
+          >
+            times bus 684 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-684</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-l1"
+          >
+            times bus l1 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-l1</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-piscinas"
+          >
+            times bus piscinas -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-piscinas</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for times in bus 680</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 597,
+	"date": "2017-09-07T15:38:01",
+	"date_gmt": "2017-09-07T15:38:01",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=timepubtra-680&#038;p=597"
+	},
+	"modified": "2018-01-27T10:10:39",
+	"modified_gmt": "2018-01-27T10:10:39",
+	"slug": "680-horario-invierno",
+	"status": "publish",
+	"type": "timepubtra-680",
+	"link": "http:\/\/jesidea.com\/cercepois\/timepubtra-680\/680-horario-invierno\/",
+	"title": {
+		"rendered": "680-horario-invierno"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "680-horario-invierno",
+	"horario_salidas_cercedilla_hospital_villalba": ["LV-6-55", "LV-8-20", "LV-9-45", "LV-11-40", "LV-13-05", "LV-14-30", "LV-15-55", "LV-17-20", "LV-19-15", "LV-20-40", "LV-22-05", "S-7-00", "S-8-10", "S-9-30", "S-11-10", "S-12-35", "S-13-40"],
+	"horario_salidas_hospital_villalba_cercedilla": ["LV-7-35", "LV-9-00", "LV-10-25", "LV-12-20", "LV-13-45", "LV-15-15", "LV-16-35", "LV-18-30", "LV-19-55", "LV-21-20", "LV-22-45", "S-7-30", "S-8-50", "S-10-00", "S-11-50", "S-13-00", "S-15-15"],
+	"fecha_desde": "2017-01-01",
+	"fecha_hasta": "2017-12-31",
+	"folleto_link": {
+		"ID": "598",
+		"post_author": "1",
+		"post_date": "2017-09-07 15:37:54",
+		"post_date_gmt": "2017-09-07 15:37:54",
+		"post_content": "",
+		"post_title": "linea_bus_680_invierno",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "linea_bus_680_invierno",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-01-27 10:10:39",
+		"post_modified_gmt": "2018-01-27 10:10:39",
+		"post_content_filtered": "",
+		"post_parent": "597",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2017\/09\/linea_bus_680_invierno.pdf",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "application\/pdf",
+		"comment_count": "0",
+		"pod_item_id": "598"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/timepubtra-680\/597"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/timepubtra-680"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/timepubtra-680"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=597"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]
+        </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-time-pubtra.png"
+        alt="elintercambiador-pod-entity-time-pubtra"
+      />
+    </section>
+
+    <section>
+      <h2>Times Train lines</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-c2"
+          >
+            Times Train line c2 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-c2</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-c9"
+          >
+            Times Train line c9 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-c9</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-reg"
+          >
+            Times Train line reg -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/timepubtra-train-reg</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for times in train line reg (Regular Segovia)</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 649,
+	"date": "2018-03-17T18:49:24",
+	"date_gmt": "2018-03-17T18:49:24",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=timepubtra-train-reg&#038;p=649"
+	},
+	"modified": "2018-03-17T20:17:59",
+	"modified_gmt": "2018-03-17T20:17:59",
+	"slug": "horarios-linea-cercedilla-segovia",
+	"status": "publish",
+	"type": "timepubtra-train-reg",
+	"link": "http:\/\/jesidea.com\/cercepois\/timepubtra-train-reg\/horarios-linea-cercedilla-segovia\/",
+	"title": {
+		"rendered": "horarios linea cercedilla segovia"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "horarios linea cercedilla segovia",
+	"horario_salidas_cercedilla_segovia": ["LV-12-30", "LV-20-00", "LV-13-35", "SDF-9-47", "SDF-11-32", "SDF-13-32", "SDF-17-32", "SDF-20-32"],
+	"horario_salidas_segovia_cercedilla": ["LV-7-50", "LV-14-50", "LV-20-50", "SDF-10-50", "SDF-12-50", "SDF-18-50", "SDF-21-20"],
+	"fecha_desde": "2018-01-01",
+	"fecha_hasta": "2018-12-31",
+	"folleto_link": {
+		"ID": "655",
+		"post_author": "1",
+		"post_date": "2018-03-17 20:17:32",
+		"post_date_gmt": "2018-03-17 20:17:32",
+		"post_content": "",
+		"post_title": "horarios-segovia-madrid",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "horarios-segovia-madrid-3",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-17 20:17:59",
+		"post_modified_gmt": "2018-03-17 20:17:59",
+		"post_content_filtered": "",
+		"post_parent": "649",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/horarios-segovia-madrid-2.pdf",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "application\/pdf",
+		"comment_count": "0",
+		"pod_item_id": "655"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/timepubtra-train-reg\/649"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/timepubtra-train-reg"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/timepubtra-train-reg"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=649"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]
+                      </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-time-train-pubtra.png"
+        alt="elintercambiador-pod-entity-time-train-pubtra"
+      />
+    </section>
+
+    <section>
+      <h2>Public transport lines</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-c2"
+          >
+            Train line c2 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-c2</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-c9"
+          >
+            Train line c9 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-c9</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-regseg"
+          >
+            Train line regseg -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-regseg</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-piscinas"
+          >
+            Bus line piscinas -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-piscinas</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-680"
+          >
+            Bus line 680 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-680</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-684"
+          >
+            Bus line 684 -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-pubtra-684</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for train line reg (Regular Segovia)</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 654,
+	"date": "2018-03-17T18:54:24",
+	"date_gmt": "2018-03-17T18:54:24",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=line-pubtra-regional&#038;p=654"
+	},
+	"modified": "2018-03-18T13:47:38",
+	"modified_gmt": "2018-03-18T13:47:38",
+	"slug": "tren-regional-cercedilla-segovia",
+	"status": "publish",
+	"type": "line-pubtra-regseg",
+	"link": "http:\/\/jesidea.com\/cercepois\/line-pubtra-regseg\/tren-regional-cercedilla-segovia\/",
+	"title": {
+		"rendered": "Tren regional cercedilla segovia"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Reg. Cerce-Sego",
+	"timetable": [{
+		"nombre": "horarios linea cercedilla segovia",
+		"horario_salidas_cercedilla_segovia": ["LV-12-30", "LV-20-00", "LV-13-35", "SDF-9-47", "SDF-11-32", "SDF-13-32", "SDF-17-32", "SDF-20-32"],
+		"horario_salidas_segovia_cercedilla": ["LV-7-50", "LV-14-50", "LV-20-50", "SDF-10-50", "SDF-12-50", "SDF-18-50", "SDF-21-20"],
+		"fecha_desde": "2018-01-01",
+		"fecha_hasta": "2018-12-31",
+		"folleto_link": {
+			"ID": "655",
+			"post_author": "1",
+			"post_date": "2018-03-17 20:17:32",
+			"post_date_gmt": "2018-03-17 20:17:32",
+			"post_content": "",
+			"post_title": "horarios-segovia-madrid",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "horarios-segovia-madrid-3",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-17 20:17:59",
+			"post_modified_gmt": "2018-03-17 20:17:59",
+			"post_content_filtered": "",
+			"post_parent": "649",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/horarios-segovia-madrid-2.pdf",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "application\/pdf",
+			"comment_count": "0",
+			"pod_item_id": "655"
+		},
+		"ID": 649,
+		"post_title": "horarios linea cercedilla segovia",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:49:24",
+		"post_date_gmt": "2018-03-17 18:49:24",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "horarios-linea-cercedilla-segovia",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-17 20:17:59",
+		"post_modified_gmt": "2018-03-17 20:17:59",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=timepubtra-train-reg&#038;p=649",
+		"menu_order": 0,
+		"post_type": "timepubtra-train-reg",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 649
+	}],
+	"station_start": [{
+		"nombre": "Tren: Estaci\u00f3n de Cercedilla",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n de Cercedilla - Calle de Emilio Serrano (Cercedilla)",
+		"latlon": "40.7374986,-4.0663375",
+		"tfnos": "",
+		"image_front": {
+			"ID": "106",
+			"post_author": "1",
+			"post_date": "2017-03-07 21:52:57",
+			"post_date_gmt": "2017-03-07 21:52:57",
+			"post_content": "",
+			"post_title": "tren_estacion_popup",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "tren_estacion_popup",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2017-09-13 12:22:57",
+			"post_modified_gmt": "2017-09-13 12:22:57",
+			"post_content_filtered": "",
+			"post_parent": "40",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/tren_estacion_popup.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "106"
+		},
+		"google_streetview_link": "http:\/\/maps.google.com\/maps?q=&layer=c&cbll=40.7374986,-4.0663375&cbp=12,180,0,2,0",
+		"website": "",
+		"sentido": "fin-linea",
+		"ID": 39,
+		"post_title": "Tren: Estaci\u00f3n de Cercedilla (Cercedilla)",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2016-08-17 15:44:05",
+		"post_date_gmt": "2016-08-17 15:44:05",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "estacion-de-tren",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-09-13 12:22:57",
+		"post_modified_gmt": "2017-09-13 12:22:57",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_public_transpo&#038;p=39",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 39
+	}],
+	"station_end": [{
+		"nombre": "Tren: Estaci\u00f3n Segovia",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n de Segovia, C\/ Obispo Quesada, 1",
+		"latlon": "40.9343715,-4.1136846",
+		"tfnos": "",
+		"image_front": {
+			"ID": "631",
+			"post_author": "1",
+			"post_date": "2018-03-17 18:09:26",
+			"post_date_gmt": "2018-03-17 18:09:26",
+			"post_content": "",
+			"post_title": "Captura de pantalla 2018-03-17 a las 19.08.37",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "captura-de-pantalla-2018-03-17-a-las-19-08-37",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-18 13:49:37",
+			"post_modified_gmt": "2018-03-18 13:49:37",
+			"post_content_filtered": "",
+			"post_parent": "630",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.08.37.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "631"
+		},
+		"google_streetview_link": "http:\/\/bit.ly\/2FLqAKQ",
+		"website": "",
+		"sentido": "ambos",
+		"ID": 630,
+		"post_title": "Tren: Estaci\u00f3n Segovia",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:10:58",
+		"post_date_gmt": "2018-03-17 18:10:58",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-estacion-segovia",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:49:36",
+		"post_modified_gmt": "2018-03-18 13:49:36",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=630",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 630
+	}],
+	"stations-cercedilla-segovia": [{
+		"station_start": {
+			"39": {
+				"nombre": "Tren: Estaci\u00f3n de Cercedilla",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n de Cercedilla - Calle de Emilio Serrano (Cercedilla)",
+				"latlon": "40.7374986,-4.0663375",
+				"tfnos": "",
+				"image_front": {
+					"ID": "106",
+					"post_author": "1",
+					"post_date": "2017-03-07 21:52:57",
+					"post_date_gmt": "2017-03-07 21:52:57",
+					"post_content": "",
+					"post_title": "tren_estacion_popup",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "tren_estacion_popup",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2017-09-13 12:22:57",
+					"post_modified_gmt": "2017-09-13 12:22:57",
+					"post_content_filtered": "",
+					"post_parent": "40",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/tren_estacion_popup.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "106"
+				},
+				"google_streetview_link": "http:\/\/maps.google.com\/maps?q=&layer=c&cbll=40.7374986,-4.0663375&cbp=12,180,0,2,0",
+				"website": "",
+				"sentido": "fin-linea",
+				"ID": 39,
+				"post_title": "Tren: Estaci\u00f3n de Cercedilla (Cercedilla)",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2016-08-17 15:44:05",
+				"post_date_gmt": "2016-08-17 15:44:05",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "estacion-de-tren",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2017-09-13 12:22:57",
+				"post_modified_gmt": "2017-09-13 12:22:57",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_public_transpo&#038;p=39",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 39
+			}
+		},
+		"station_1": {
+			"618": {
+				"nombre": "Tren:  Estaci\u00f3n San Rafael",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n San Rafael, Paseo Apeadero 16, El Espinar",
+				"latlon": "40.7147665,-4.1817394",
+				"tfnos": "",
+				"image_front": {
+					"ID": "619",
+					"post_author": "1",
+					"post_date": "2018-03-17 17:48:55",
+					"post_date_gmt": "2018-03-17 17:48:55",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 18.47.56",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-18-47-56",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:37:53",
+					"post_modified_gmt": "2018-03-18 13:37:53",
+					"post_content_filtered": "",
+					"post_parent": "618",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.47.56.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "619"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2pj9Ijy",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 618,
+				"post_title": "Tren:  Estaci\u00f3n San Rafael",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 17:50:00",
+				"post_date_gmt": "2018-03-17 17:50:00",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-san-rafael",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:37:52",
+				"post_modified_gmt": "2018-03-18 13:37:52",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=618",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 618
+			}
+		},
+		"station_2": {
+			"620": {
+				"nombre": "Tren: Estaci\u00f3n El Espinar",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n El Espinar, Carretera Paso a Nivel, El Espinar",
+				"latlon": "40.7407015,-4.1899701",
+				"tfnos": "",
+				"image_front": {
+					"ID": "621",
+					"post_author": "1",
+					"post_date": "2018-03-17 17:53:03",
+					"post_date_gmt": "2018-03-17 17:53:03",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 18.51.22",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-18-51-22",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:37:33",
+					"post_modified_gmt": "2018-03-18 13:37:33",
+					"post_content_filtered": "",
+					"post_parent": "620",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.51.22.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "621"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2IzKJl8",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 620,
+				"post_title": "Tren: Estaci\u00f3n El Espinar",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 17:53:30",
+				"post_date_gmt": "2018-03-17 17:53:30",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-el-espinar",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:37:32",
+				"post_modified_gmt": "2018-03-18 13:37:32",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=620",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 620
+			}
+		},
+		"station_3": {
+			"628": {
+				"nombre": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n Navas de Riofrio - La Losa , Calle Estaci\u00f3n , Navas de Riofrio",
+				"latlon": "40.8569269,-4.1410992",
+				"tfnos": "",
+				"image_front": {
+					"ID": "629",
+					"post_author": "1",
+					"post_date": "2018-03-17 18:06:49",
+					"post_date_gmt": "2018-03-17 18:06:49",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 19.05.33",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-19-05-33",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:35:34",
+					"post_modified_gmt": "2018-03-18 13:35:34",
+					"post_content_filtered": "",
+					"post_parent": "628",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.05.33.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "629"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2tXbPPF",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 628,
+				"post_title": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 18:07:18",
+				"post_date_gmt": "2018-03-17 18:07:18",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-navas-de-riofrio-la-losa",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:35:33",
+				"post_modified_gmt": "2018-03-18 13:35:33",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=628",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 628
+			}
+		},
+		"station_end": {
+			"630": {
+				"nombre": "Tren: Estaci\u00f3n Segovia",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n de Segovia, C\/ Obispo Quesada, 1",
+				"latlon": "40.9343715,-4.1136846",
+				"tfnos": "",
+				"image_front": {
+					"ID": "631",
+					"post_author": "1",
+					"post_date": "2018-03-17 18:09:26",
+					"post_date_gmt": "2018-03-17 18:09:26",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 19.08.37",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-19-08-37",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:49:37",
+					"post_modified_gmt": "2018-03-18 13:49:37",
+					"post_content_filtered": "",
+					"post_parent": "630",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.08.37.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "631"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2FLqAKQ",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 630,
+				"post_title": "Tren: Estaci\u00f3n Segovia",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 18:10:58",
+				"post_date_gmt": "2018-03-17 18:10:58",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-segovia",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:49:36",
+				"post_modified_gmt": "2018-03-18 13:49:36",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=630",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 630
+			}
+		},
+		"duration_estimated": "1h 15min",
+		"ID": 632,
+		"post_title": "tren-regional-cercedilla-segovia",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:14:27",
+		"post_date_gmt": "2018-03-17 18:14:27",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-regional-cercedilla-segovia",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-17 18:16:04",
+		"post_modified_gmt": "2018-03-17 18:16:04",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=line-route&#038;p=632",
+		"menu_order": 0,
+		"post_type": "line-route",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 632
+	}],
+	"stations-segovia-cercedilla": [{
+		"station_start": {
+			"630": {
+				"nombre": "Tren: Estaci\u00f3n Segovia",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n de Segovia, C\/ Obispo Quesada, 1",
+				"latlon": "40.9343715,-4.1136846",
+				"tfnos": "",
+				"image_front": {
+					"ID": "631",
+					"post_author": "1",
+					"post_date": "2018-03-17 18:09:26",
+					"post_date_gmt": "2018-03-17 18:09:26",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 19.08.37",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-19-08-37",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:49:37",
+					"post_modified_gmt": "2018-03-18 13:49:37",
+					"post_content_filtered": "",
+					"post_parent": "630",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.08.37.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "631"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2FLqAKQ",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 630,
+				"post_title": "Tren: Estaci\u00f3n Segovia",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 18:10:58",
+				"post_date_gmt": "2018-03-17 18:10:58",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-segovia",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:49:36",
+				"post_modified_gmt": "2018-03-18 13:49:36",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=630",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 630
+			}
+		},
+		"station_1": {
+			"628": {
+				"nombre": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n Navas de Riofrio - La Losa , Calle Estaci\u00f3n , Navas de Riofrio",
+				"latlon": "40.8569269,-4.1410992",
+				"tfnos": "",
+				"image_front": {
+					"ID": "629",
+					"post_author": "1",
+					"post_date": "2018-03-17 18:06:49",
+					"post_date_gmt": "2018-03-17 18:06:49",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 19.05.33",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-19-05-33",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:35:34",
+					"post_modified_gmt": "2018-03-18 13:35:34",
+					"post_content_filtered": "",
+					"post_parent": "628",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.05.33.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "629"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2tXbPPF",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 628,
+				"post_title": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 18:07:18",
+				"post_date_gmt": "2018-03-17 18:07:18",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-navas-de-riofrio-la-losa",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:35:33",
+				"post_modified_gmt": "2018-03-18 13:35:33",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=628",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 628
+			}
+		},
+		"station_2": {
+			"620": {
+				"nombre": "Tren: Estaci\u00f3n El Espinar",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n El Espinar, Carretera Paso a Nivel, El Espinar",
+				"latlon": "40.7407015,-4.1899701",
+				"tfnos": "",
+				"image_front": {
+					"ID": "621",
+					"post_author": "1",
+					"post_date": "2018-03-17 17:53:03",
+					"post_date_gmt": "2018-03-17 17:53:03",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 18.51.22",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-18-51-22",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:37:33",
+					"post_modified_gmt": "2018-03-18 13:37:33",
+					"post_content_filtered": "",
+					"post_parent": "620",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.51.22.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "621"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2IzKJl8",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 620,
+				"post_title": "Tren: Estaci\u00f3n El Espinar",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 17:53:30",
+				"post_date_gmt": "2018-03-17 17:53:30",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-el-espinar",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:37:32",
+				"post_modified_gmt": "2018-03-18 13:37:32",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=620",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 620
+			}
+		},
+		"station_3": {
+			"618": {
+				"nombre": "Tren:  Estaci\u00f3n San Rafael",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n San Rafael, Paseo Apeadero 16, El Espinar",
+				"latlon": "40.7147665,-4.1817394",
+				"tfnos": "",
+				"image_front": {
+					"ID": "619",
+					"post_author": "1",
+					"post_date": "2018-03-17 17:48:55",
+					"post_date_gmt": "2018-03-17 17:48:55",
+					"post_content": "",
+					"post_title": "Captura de pantalla 2018-03-17 a las 18.47.56",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "captura-de-pantalla-2018-03-17-a-las-18-47-56",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-03-18 13:37:53",
+					"post_modified_gmt": "2018-03-18 13:37:53",
+					"post_content_filtered": "",
+					"post_parent": "618",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.47.56.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "619"
+				},
+				"google_streetview_link": "http:\/\/bit.ly\/2pj9Ijy",
+				"website": "",
+				"sentido": "ambos",
+				"ID": 618,
+				"post_title": "Tren:  Estaci\u00f3n San Rafael",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-03-17 17:50:00",
+				"post_date_gmt": "2018-03-17 17:50:00",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "tren-estacion-san-rafael",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-03-18 13:37:52",
+				"post_modified_gmt": "2018-03-18 13:37:52",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=618",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 618
+			}
+		},
+		"station_end": {
+			"39": {
+				"nombre": "Tren: Estaci\u00f3n de Cercedilla",
+				"tipo": "renfe",
+				"direccion": "Estaci\u00f3n de Cercedilla - Calle de Emilio Serrano (Cercedilla)",
+				"latlon": "40.7374986,-4.0663375",
+				"tfnos": "",
+				"image_front": {
+					"ID": "106",
+					"post_author": "1",
+					"post_date": "2017-03-07 21:52:57",
+					"post_date_gmt": "2017-03-07 21:52:57",
+					"post_content": "",
+					"post_title": "tren_estacion_popup",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "tren_estacion_popup",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2017-09-13 12:22:57",
+					"post_modified_gmt": "2017-09-13 12:22:57",
+					"post_content_filtered": "",
+					"post_parent": "40",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/tren_estacion_popup.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "106"
+				},
+				"google_streetview_link": "http:\/\/maps.google.com\/maps?q=&layer=c&cbll=40.7374986,-4.0663375&cbp=12,180,0,2,0",
+				"website": "",
+				"sentido": "fin-linea",
+				"ID": 39,
+				"post_title": "Tren: Estaci\u00f3n de Cercedilla (Cercedilla)",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2016-08-17 15:44:05",
+				"post_date_gmt": "2016-08-17 15:44:05",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "estacion-de-tren",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2017-09-13 12:22:57",
+				"post_modified_gmt": "2017-09-13 12:22:57",
+				"post_content_filtered": "",
+				"post_parent": 0,
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_public_transpo&#038;p=39",
+				"menu_order": 0,
+				"post_type": "stations_pubtra",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 39
+			}
+		},
+		"duration_estimated": "1h 15min",
+		"ID": 633,
+		"post_title": "tren-regional-segovia-cercedilla",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:15:26",
+		"post_date_gmt": "2018-03-17 18:15:26",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-regional-segovia-cercedilla",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-17 18:15:26",
+		"post_modified_gmt": "2018-03-17 18:15:26",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=line-route&#038;p=633",
+		"menu_order": 0,
+		"post_type": "line-route",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 633
+	}],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/line-pubtra-regseg\/654"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/line-pubtra-regseg"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/line-pubtra-regseg"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=654"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]
+        </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-line-pubtra.png"
+        alt="elintercambiador-pod-entity-line-pubtra"
+      />
+    </section>
+
+    <section>
+      <h2>Stations</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/stations_pubtra"
+          >
+            Stations (bus & train)
+            http://jesidea.com/cercepois/wp-json/wp/v2/stations_pubtra</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response for stations</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 630,
+	"date": "2018-03-17T18:10:58",
+	"date_gmt": "2018-03-17T18:10:58",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=630"
+	},
+	"modified": "2018-03-18T13:49:36",
+	"modified_gmt": "2018-03-18T13:49:36",
+	"slug": "tren-estacion-segovia",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-segovia\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Segovia"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Segovia",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n de Segovia, C\/ Obispo Quesada, 1",
+	"latlon": "40.9343715,-4.1136846",
+	"tfnos": "",
+	"image_front": {
+		"ID": "631",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:09:26",
+		"post_date_gmt": "2018-03-17 18:09:26",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 19.08.37",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-19-08-37",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:49:37",
+		"post_modified_gmt": "2018-03-18 13:49:37",
+		"post_content_filtered": "",
+		"post_parent": "630",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.08.37.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "631"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2FLqAKQ",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/630"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=630"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 628,
+	"date": "2018-03-17T18:07:18",
+	"date_gmt": "2018-03-17T18:07:18",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=628"
+	},
+	"modified": "2018-03-18T13:35:33",
+	"modified_gmt": "2018-03-18T13:35:33",
+	"slug": "tren-estacion-navas-de-riofrio-la-losa",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-navas-de-riofrio-la-losa\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Navas de Riofrio &#8211; La Losa"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Navas de Riofrio - La Losa , Calle Estaci\u00f3n , Navas de Riofrio",
+	"latlon": "40.8569269,-4.1410992",
+	"tfnos": "",
+	"image_front": {
+		"ID": "629",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:06:49",
+		"post_date_gmt": "2018-03-17 18:06:49",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 19.05.33",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-19-05-33",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:35:34",
+		"post_modified_gmt": "2018-03-18 13:35:34",
+		"post_content_filtered": "",
+		"post_parent": "628",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.05.33.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "629"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2tXbPPF",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/628"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=628"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 626,
+	"date": "2018-03-17T18:04:26",
+	"date_gmt": "2018-03-17T18:04:26",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=626"
+	},
+	"modified": "2018-03-18T13:36:07",
+	"modified_gmt": "2018-03-18T13:36:07",
+	"slug": "tren-ortigosa-del-monte",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-ortigosa-del-monte\/",
+	"title": {
+		"rendered": "Tren: Ortigosa del Monte"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Ortigosa del Monte",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Ortigosa del Monte, Ortigosa del Monte",
+	"latlon": "40.8328707,-4.1682559",
+	"tfnos": "",
+	"image_front": {
+		"ID": "627",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:04:00",
+		"post_date_gmt": "2018-03-17 18:04:00",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 19.02.44",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-19-02-44",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:36:07",
+		"post_modified_gmt": "2018-03-18 13:36:07",
+		"post_content_filtered": "",
+		"post_parent": "626",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.02.44.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "627"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2GEhRr2",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/626"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=626"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 624,
+	"date": "2018-03-17T18:01:49",
+	"date_gmt": "2018-03-17T18:01:49",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=624"
+	},
+	"modified": "2018-03-18T13:36:40",
+	"modified_gmt": "2018-03-18T13:36:40",
+	"slug": "tren-estacion-otero-de-herreros",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-otero-de-herreros\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Otero de Herreros"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Otero de Herreros",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Otero de Herreros, Otero de Herreros",
+	"latlon": "40.8014646,-4.2034581",
+	"tfnos": "",
+	"image_front": {
+		"ID": "625",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:01:25",
+		"post_date_gmt": "2018-03-17 18:01:25",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.59.57",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-59-57",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:36:41",
+		"post_modified_gmt": "2018-03-18 13:36:41",
+		"post_content_filtered": "",
+		"post_parent": "624",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.59.57.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "625"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2tXbtIP",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/624"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=624"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 622,
+	"date": "2018-03-17T17:59:21",
+	"date_gmt": "2018-03-17T17:59:21",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=622"
+	},
+	"modified": "2018-03-18T13:37:07",
+	"modified_gmt": "2018-03-18T13:37:07",
+	"slug": "tren-estacion-los-angeles-de-san-rafael",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-los-angeles-de-san-rafael\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Los Angeles de San Rafael"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Los Angeles de San Rafael",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Los Angeles de San Rafael , Los Angeles de San Rafael",
+	"latlon": "40.7780132,-4.2083182",
+	"tfnos": "",
+	"image_front": {
+		"ID": "623",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:58:07",
+		"post_date_gmt": "2018-03-17 17:58:07",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.57.15",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-57-15",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:37:08",
+		"post_modified_gmt": "2018-03-18 13:37:08",
+		"post_content_filtered": "",
+		"post_parent": "622",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.57.15.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "623"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2GC4vM4",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/622"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=622"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 620,
+	"date": "2018-03-17T17:53:30",
+	"date_gmt": "2018-03-17T17:53:30",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=620"
+	},
+	"modified": "2018-03-18T13:37:32",
+	"modified_gmt": "2018-03-18T13:37:32",
+	"slug": "tren-estacion-el-espinar",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-el-espinar\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n El Espinar"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n El Espinar",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n El Espinar, Carretera Paso a Nivel, El Espinar",
+	"latlon": "40.7407015,-4.1899701",
+	"tfnos": "",
+	"image_front": {
+		"ID": "621",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:53:03",
+		"post_date_gmt": "2018-03-17 17:53:03",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.51.22",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-51-22",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:37:33",
+		"post_modified_gmt": "2018-03-18 13:37:33",
+		"post_content_filtered": "",
+		"post_parent": "620",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.51.22.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "621"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2IzKJl8",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/620"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=620"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 618,
+	"date": "2018-03-17T17:50:00",
+	"date_gmt": "2018-03-17T17:50:00",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=618"
+	},
+	"modified": "2018-03-18T13:37:52",
+	"modified_gmt": "2018-03-18T13:37:52",
+	"slug": "tren-estacion-san-rafael",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-san-rafael\/",
+	"title": {
+		"rendered": "Tren:  Estaci\u00f3n San Rafael"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren:  Estaci\u00f3n San Rafael",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n San Rafael, Paseo Apeadero 16, El Espinar",
+	"latlon": "40.7147665,-4.1817394",
+	"tfnos": "",
+	"image_front": {
+		"ID": "619",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:48:55",
+		"post_date_gmt": "2018-03-17 17:48:55",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.47.56",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-47-56",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:37:53",
+		"post_modified_gmt": "2018-03-18 13:37:53",
+		"post_content_filtered": "",
+		"post_parent": "618",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.47.56.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "619"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2pj9Ijy",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/618"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=618"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 616,
+	"date": "2018-03-17T17:46:12",
+	"date_gmt": "2018-03-17T17:46:12",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=616"
+	},
+	"modified": "2018-03-18T13:38:23",
+	"modified_gmt": "2018-03-18T13:38:23",
+	"slug": "tren-estacion-gudillos",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-gudillos\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Gudillos"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Gudillos",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Gudillos , San Rafael",
+	"latlon": "40.7165263,-4.1572165",
+	"tfnos": "",
+	"image_front": {
+		"ID": "617",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:45:43",
+		"post_date_gmt": "2018-03-17 17:45:43",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.43.45",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-43-45",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:38:23",
+		"post_modified_gmt": "2018-03-18 13:38:23",
+		"post_content_filtered": "",
+		"post_parent": "616",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.43.45.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "617"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2FRlMQr",
+	"website": "",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/616"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=616"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 614,
+	"date": "2018-03-17T17:33:45",
+	"date_gmt": "2018-03-17T17:33:45",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=614"
+	},
+	"modified": "2018-03-17T17:33:45",
+	"modified_gmt": "2018-03-17T17:33:45",
+	"slug": "tren-estacion-tablada",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/tren-estacion-tablada\/",
+	"title": {
+		"rendered": "Tren: Estaci\u00f3n Tablada"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Tren: Estaci\u00f3n Tablada",
+	"tipo": ["renfe"],
+	"direccion": "Estaci\u00f3n Tablada",
+	"latlon": "40.7058975,-4.1252949",
+	"tfnos": "",
+	"image_front": {
+		"ID": "615",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:32:37",
+		"post_date_gmt": "2018-03-17 17:32:37",
+		"post_content": "",
+		"post_title": "Captura de pantalla 2018-03-17 a las 18.32.10",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "captura-de-pantalla-2018-03-17-a-las-18-32-10",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-17 17:33:45",
+		"post_modified_gmt": "2018-03-17 17:33:45",
+		"post_content_filtered": "",
+		"post_parent": "614",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.32.10.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "615"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2pmr93y",
+	"website": "www.renfe.com",
+	"sentido": ["ambos"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/614"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=614"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 605,
+	"date": "2017-09-08T07:26:52",
+	"date_gmt": "2017-09-08T07:26:52",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=605"
+	},
+	"modified": "2017-09-08T07:26:52",
+	"modified_gmt": "2017-09-08T07:26:52",
+	"slug": "bus-parada-calle-del-maestro-alpedrete-direccion-cercedilla-hospital",
+	"status": "publish",
+	"type": "stations_pubtra",
+	"link": "http:\/\/jesidea.com\/cercepois\/stations-pubtra\/bus-parada-calle-del-maestro-alpedrete-direccion-cercedilla-hospital\/",
+	"title": {
+		"rendered": "Bus parada Calle del Maestro Alpedrete &#8211; direccion Cercedilla-hospital"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Bus parada Calle del Maestro Alpedrete - direccion Cercedilla-hospital",
+	"tipo": ["bus-680"],
+	"direccion": "Calle del Maestro 7 (Alpedrete)",
+	"latlon": "40.6573164,-4.0245446",
+	"tfnos": "",
+	"image_front": {
+		"ID": "606",
+		"post_author": "1",
+		"post_date": "2017-09-08 07:26:37",
+		"post_date_gmt": "2017-09-08 07:26:37",
+		"post_content": "",
+		"post_title": "parada-calle-maestro-alpedrete",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "parada-calle-maestro-alpedrete",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-09-08 07:26:52",
+		"post_modified_gmt": "2017-09-08 07:26:52",
+		"post_content_filtered": "",
+		"post_parent": "605",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2017\/09\/parada-calle-maestro-alpedrete.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "606"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2vK3tHH",
+	"website": "",
+	"sentido": ["Cercedilla-HospitalVillalba"],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra\/605"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/stations_pubtra"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/stations_pubtra"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=605"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]              
+            </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-stations-pubtra.png"
+        alt="elintercambiador-pod-entity-stations-pubtra"
+      />
+    </section>
+
+    <section>
+      <h2>Line Routes</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-route"
+          >
+            all line routes -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-route</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/line-route/633"
+          >
+            single line route -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/line-route/633</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for a single line route</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 633,
+	"date": "2018-03-17T18:15:26",
+	"date_gmt": "2018-03-17T18:15:26",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=line-route&#038;p=633"
+	},
+	"modified": "2018-03-17T18:15:26",
+	"modified_gmt": "2018-03-17T18:15:26",
+	"slug": "tren-regional-segovia-cercedilla",
+	"status": "publish",
+	"type": "line-route",
+	"link": "http:\/\/jesidea.com\/cercepois\/line-route\/tren-regional-segovia-cercedilla\/",
+	"title": {
+		"rendered": "tren-regional-segovia-cercedilla"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"station_start": [{
+		"nombre": "Tren: Estaci\u00f3n Segovia",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n de Segovia, C\/ Obispo Quesada, 1",
+		"latlon": "40.9343715,-4.1136846",
+		"tfnos": "",
+		"image_front": {
+			"ID": "631",
+			"post_author": "1",
+			"post_date": "2018-03-17 18:09:26",
+			"post_date_gmt": "2018-03-17 18:09:26",
+			"post_content": "",
+			"post_title": "Captura de pantalla 2018-03-17 a las 19.08.37",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "captura-de-pantalla-2018-03-17-a-las-19-08-37",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-18 13:49:37",
+			"post_modified_gmt": "2018-03-18 13:49:37",
+			"post_content_filtered": "",
+			"post_parent": "630",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.08.37.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "631"
+		},
+		"google_streetview_link": "http:\/\/bit.ly\/2FLqAKQ",
+		"website": "",
+		"sentido": "ambos",
+		"ID": 630,
+		"post_title": "Tren: Estaci\u00f3n Segovia",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:10:58",
+		"post_date_gmt": "2018-03-17 18:10:58",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-estacion-segovia",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:49:36",
+		"post_modified_gmt": "2018-03-18 13:49:36",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=630",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 630
+	}],
+	"station_1": [{
+		"nombre": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n Navas de Riofrio - La Losa , Calle Estaci\u00f3n , Navas de Riofrio",
+		"latlon": "40.8569269,-4.1410992",
+		"tfnos": "",
+		"image_front": {
+			"ID": "629",
+			"post_author": "1",
+			"post_date": "2018-03-17 18:06:49",
+			"post_date_gmt": "2018-03-17 18:06:49",
+			"post_content": "",
+			"post_title": "Captura de pantalla 2018-03-17 a las 19.05.33",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "captura-de-pantalla-2018-03-17-a-las-19-05-33",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-18 13:35:34",
+			"post_modified_gmt": "2018-03-18 13:35:34",
+			"post_content_filtered": "",
+			"post_parent": "628",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-19.05.33.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "629"
+		},
+		"google_streetview_link": "http:\/\/bit.ly\/2tXbPPF",
+		"website": "",
+		"sentido": "ambos",
+		"ID": 628,
+		"post_title": "Tren: Estaci\u00f3n Navas de Riofrio - La Losa",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 18:07:18",
+		"post_date_gmt": "2018-03-17 18:07:18",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-estacion-navas-de-riofrio-la-losa",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:35:33",
+		"post_modified_gmt": "2018-03-18 13:35:33",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=628",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 628
+	}],
+	"station_2": [{
+		"nombre": "Tren: Estaci\u00f3n El Espinar",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n El Espinar, Carretera Paso a Nivel, El Espinar",
+		"latlon": "40.7407015,-4.1899701",
+		"tfnos": "",
+		"image_front": {
+			"ID": "621",
+			"post_author": "1",
+			"post_date": "2018-03-17 17:53:03",
+			"post_date_gmt": "2018-03-17 17:53:03",
+			"post_content": "",
+			"post_title": "Captura de pantalla 2018-03-17 a las 18.51.22",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "captura-de-pantalla-2018-03-17-a-las-18-51-22",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-18 13:37:33",
+			"post_modified_gmt": "2018-03-18 13:37:33",
+			"post_content_filtered": "",
+			"post_parent": "620",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.51.22.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "621"
+		},
+		"google_streetview_link": "http:\/\/bit.ly\/2IzKJl8",
+		"website": "",
+		"sentido": "ambos",
+		"ID": 620,
+		"post_title": "Tren: Estaci\u00f3n El Espinar",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:53:30",
+		"post_date_gmt": "2018-03-17 17:53:30",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-estacion-el-espinar",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:37:32",
+		"post_modified_gmt": "2018-03-18 13:37:32",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=620",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 620
+	}],
+	"station_3": [{
+		"nombre": "Tren:  Estaci\u00f3n San Rafael",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n San Rafael, Paseo Apeadero 16, El Espinar",
+		"latlon": "40.7147665,-4.1817394",
+		"tfnos": "",
+		"image_front": {
+			"ID": "619",
+			"post_author": "1",
+			"post_date": "2018-03-17 17:48:55",
+			"post_date_gmt": "2018-03-17 17:48:55",
+			"post_content": "",
+			"post_title": "Captura de pantalla 2018-03-17 a las 18.47.56",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "captura-de-pantalla-2018-03-17-a-las-18-47-56",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2018-03-18 13:37:53",
+			"post_modified_gmt": "2018-03-18 13:37:53",
+			"post_content_filtered": "",
+			"post_parent": "618",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/03\/Captura-de-pantalla-2018-03-17-a-las-18.47.56.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "619"
+		},
+		"google_streetview_link": "http:\/\/bit.ly\/2pj9Ijy",
+		"website": "",
+		"sentido": "ambos",
+		"ID": 618,
+		"post_title": "Tren:  Estaci\u00f3n San Rafael",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-03-17 17:50:00",
+		"post_date_gmt": "2018-03-17 17:50:00",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "tren-estacion-san-rafael",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2018-03-18 13:37:52",
+		"post_modified_gmt": "2018-03-18 13:37:52",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=stations_pubtra&#038;p=618",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 618
+	}],
+	"station_end": [{
+		"nombre": "Tren: Estaci\u00f3n de Cercedilla",
+		"tipo": "renfe",
+		"direccion": "Estaci\u00f3n de Cercedilla - Calle de Emilio Serrano (Cercedilla)",
+		"latlon": "40.7374986,-4.0663375",
+		"tfnos": "",
+		"image_front": {
+			"ID": "106",
+			"post_author": "1",
+			"post_date": "2017-03-07 21:52:57",
+			"post_date_gmt": "2017-03-07 21:52:57",
+			"post_content": "",
+			"post_title": "tren_estacion_popup",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "tren_estacion_popup",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2017-09-13 12:22:57",
+			"post_modified_gmt": "2017-09-13 12:22:57",
+			"post_content_filtered": "",
+			"post_parent": "40",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/tren_estacion_popup.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "106"
+		},
+		"google_streetview_link": "http:\/\/maps.google.com\/maps?q=&layer=c&cbll=40.7374986,-4.0663375&cbp=12,180,0,2,0",
+		"website": "",
+		"sentido": "fin-linea",
+		"ID": 39,
+		"post_title": "Tren: Estaci\u00f3n de Cercedilla (Cercedilla)",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2016-08-17 15:44:05",
+		"post_date_gmt": "2016-08-17 15:44:05",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "estacion-de-tren",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-09-13 12:22:57",
+		"post_modified_gmt": "2017-09-13 12:22:57",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_public_transpo&#038;p=39",
+		"menu_order": 0,
+		"post_type": "stations_pubtra",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 39
+	}],
+	"duration_estimated": "1h 15min",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/line-route\/633"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/line-route"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/line-route"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=633"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}              
+            </code></pre>
+        </div>
+      </div>
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-line-route.png"
+        alt="elintercambiador-pod-entity-line-route"
+      />
+    </section>
+
+    <section>
+      <h2>Bank holidays</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/bank_holidays"
+          >
+            all bank holidays -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/bank_holidays</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/bank_holidays/406"
+          >
+            single bank holiday -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/bank_holidays/406</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for a single bank holiday</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 406,
+	"date": "2017-06-15T08:05:02",
+	"date_gmt": "2017-06-15T08:05:02",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=bank_holidays&#038;p=406"
+	},
+	"modified": "2017-06-15T08:08:21",
+	"modified_gmt": "2017-06-15T08:08:21",
+	"slug": "calendario_laboral_cam_2017",
+	"status": "publish",
+	"type": "bank_holidays",
+	"link": "http:\/\/jesidea.com\/cercepois\/bank-holidays\/calendario_laboral_cam_2017\/",
+	"title": {
+		"rendered": "calendario_laboral_cam_2017"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "calendario_laboral_cam_2017",
+	"day_list": "01\/01\/2017#A\u00f1o_nuevo,06\/01\/2017#Epifan\u00eda_del_Se\u00f1or,20\/03\/2017#Lunes_siguiente_a_San_Jos\u00e9,13\/04\/2017#Jueves_Santo,14\/04\/2017#Viernes_Santo,01\/05\/2017#Fiesta_del_Trabajo,02\/05\/2017#Fiesta_de_la_Comunidad_de_Madrid,15\/08\/2017#Asunci\u00f3n_de_la_Virgen,12\/10\/2017#Fiesta_Nacional_de_Espa\u00f1a,01\/11\/2017#Todos_los_Santos,06\/12\/2017#D\u00eda_de_la_Constituci\u00f3n_Espa\u00f1ola,08\/12\/2017#Inmaculada_Concepci\u00f3n,25\/12\/2017#Natividad_del_Se\u00f1or",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/bank_holidays\/406"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/bank_holidays"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/bank_holidays"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=406"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}              
+            </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/elintercambiador-pod-entity-bank-holidays.png"
+        alt="elintercambiador-pod-entity-bank-holidays"
+      />
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

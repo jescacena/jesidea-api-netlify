@@ -3,8 +3,7 @@ body {
   max-width: 80%;
   /* text-align: center; */
   margin: 0 auto;
-  padding-bottom: 10rem;
-
+  padding: 0 1rem 10rem 1rem;
 }
 
 header {
@@ -14,7 +13,7 @@ header {
   align-items: center;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-  padding: 1rem;
+  padding: 1rem 0 ;
   margin-bottom: 2rem;
 }
 
@@ -97,8 +96,10 @@ img.pod-capture {
 }
 /* ------- responsive */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 340px) and (max-device-width: 812px) {
   body {
     max-width: none;
+    width: 95%;
+    padding: 0 0 10rem 0;
   }
 }

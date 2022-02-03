@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] cercemap</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cercemap API</h1>
+
+      <!-- Header nav -->
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img
+      class="pod-capture"
+      src="/images/Cercemap_data_sources.png"
+      alt="Cercemap_data_sources"
+    />
+
+    <section>
+      <h2>CCPOIs wordpress PODs</h2>
+      <p>
+        Source data hosted in wordpress
+        <a href="http://jesidea.com/cercepois/wp-admin"
+          >http://jesidea.com/cercepois/wp-admin</a
+        >
+      </p>
+      <p>* A <strong>poilist</strong> groups pois pods in other agrupations</p>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/school"
+            >Pod Schools</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/health"
+            >Pod Health</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/food"
+            >Pod Food</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/muniservice"
+            >Pod Municipal Services</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/clothes"
+            >Pod Clothes</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/bazaars"
+            >Pod Bazaars</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/banks"
+            >Pod Banks</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/police"
+            >Pod Police</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/ccpoilist"
+            >Pod PoiLists (mascotas, peluquerias, ferreterias, floristerias,
+            talleres_mecanicos, bazares_chinos)</a
+          >
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/ccpoilist_culture"
+            >Pod PoiLists Culture (zonas_infantiles, centros_culturales)</a
+          >
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/ccpoilist_food"
+            >Pod PoiLists Food (supermercados, carnicerias, panaderias,
+            pescaderias, fruterias)</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response (pod schools)</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 58,
+	"date": "2016-08-20T18:54:23",
+	"date_gmt": "2016-08-20T18:54:23",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_school&#038;p=58"
+	},
+	"modified": "2017-04-13T15:29:19",
+	"modified_gmt": "2017-04-13T15:29:19",
+	"slug": "colegio-concertado-regina-assumpta",
+	"status": "publish",
+	"type": "schools",
+	"link": "http:\/\/jesidea.com\/cercepois\/schools\/colegio-concertado-regina-assumpta\/",
+	"title": {
+		"rendered": "COLEGIO CONCERTADO \u201cREGINA ASSUMPTA\u201d"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "COLEGIO CONCERTADO \u201cREGINA ASSUMPTA\u201d",
+	"naturaleza": "concertado",
+	"tipo": ["infantil", "primaria"],
+	"direccion": "Calle San Andr\u00e9s 9",
+	"latlon": "40.7382819, -4.058405900000025",
+	"anchorlink": "reginaassumpta",
+	"tfnos": "Tfno: 918 520 313  Fax: 918 525 511",
+	"website": "http:\/\/www.reginaassumpta.es\/",
+	"image_front": {
+		"ID": "98",
+		"post_author": "1",
+		"post_date": "2017-03-07 21:17:05",
+		"post_date_gmt": "2017-03-07 21:17:05",
+		"post_content": "",
+		"post_title": "regina_asumpta_2_popup",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "regina_asumpta_2_popup",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-04-13 15:29:19",
+		"post_modified_gmt": "2017-04-13 15:29:19",
+		"post_content_filtered": "",
+		"post_parent": "58",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/regina_asumpta_2_popup.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "98"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2jVqLEr",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school\/58"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/schools"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=58"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 38,
+	"date": "2016-08-17T15:40:18",
+	"date_gmt": "2016-08-17T15:40:18",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_school&#038;p=38"
+	},
+	"modified": "2017-03-18T22:01:40",
+	"modified_gmt": "2017-03-18T22:01:40",
+	"slug": "escuela-de-musica-y-danza-joaquin-sorolla",
+	"status": "publish",
+	"type": "schools",
+	"link": "http:\/\/jesidea.com\/cercepois\/schools\/escuela-de-musica-y-danza-joaquin-sorolla\/",
+	"title": {
+		"rendered": "Escuela de M\u00fasica y Danza Joaquin Sorolla"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Escuela de M\u00fasica y Danza Joaquin Sorolla",
+	"naturaleza": "publico",
+	"tipo": ["escuela_de_musica"],
+	"direccion": "Calle Carrera del Se\u00f1or,7",
+	"latlon": "40.7410278,-4.0569878",
+	"anchorlink": "escuelamusica",
+	"tfnos": "Tel\u00e9fonos: 91 852 36 20 \u2013 628 542 386. Fax: 91 852 36 20",
+	"website": "http:\/\/www.cercedilla.es\/escuela-de-musica\/",
+	"image_front": {
+		"ID": "99",
+		"post_author": "1",
+		"post_date": "2017-03-07 21:21:10",
+		"post_date_gmt": "2017-03-07 21:21:10",
+		"post_content": "",
+		"post_title": "escuela_musica_joaquin_sorolla_popup",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "escuela_musica_joaquin_sorolla_popup",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-03-18 22:01:40",
+		"post_modified_gmt": "2017-03-18 22:01:40",
+		"post_content_filtered": "",
+		"post_parent": "38",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/escuela_musica_joaquin_sorolla_popup.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "99"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2jXNPVy",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school\/38"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/schools"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=38"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 37,
+	"date": "2016-08-17T15:37:42",
+	"date_gmt": "2016-08-17T15:37:42",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_school&#038;p=37"
+	},
+	"modified": "2017-04-13T15:29:56",
+	"modified_gmt": "2017-04-13T15:29:56",
+	"slug": "ies-la-dehesilla",
+	"status": "publish",
+	"type": "schools",
+	"link": "http:\/\/jesidea.com\/cercepois\/schools\/ies-la-dehesilla\/",
+	"title": {
+		"rendered": "IES \u201cLA DEHESILLA\u201d"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "IES \u201cLA DEHESILLA\u201d",
+	"naturaleza": "publico",
+	"tipo": ["secundaria"],
+	"direccion": "Camino De la Dehesilla y Rodeo, S\/N",
+	"latlon": "40.7332726,-4.0439448",
+	"anchorlink": "ladehesilla",
+	"tfnos": "Telf.: 91 852 17 63",
+	"website": "http:\/\/www.educa.madrid.org\/ies.ladehesilla.cercedilla",
+	"image_front": {
+		"ID": "101",
+		"post_author": "1",
+		"post_date": "2017-03-07 21:25:05",
+		"post_date_gmt": "2017-03-07 21:25:05",
+		"post_content": "",
+		"post_title": "ies_dehesilla_popup",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "ies_dehesilla_popup",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-04-13 15:29:56",
+		"post_modified_gmt": "2017-04-13 15:29:56",
+		"post_content_filtered": "",
+		"post_parent": "37",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/ies_dehesilla_popup.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "101"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2jwiY3P",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school\/37"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/schools"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=37"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 36,
+	"date": "2016-08-17T15:35:18",
+	"date_gmt": "2016-08-17T15:35:18",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_school&#038;p=36"
+	},
+	"modified": "2017-04-13T15:30:21",
+	"modified_gmt": "2017-04-13T15:30:21",
+	"slug": "colegio-publico-ceip-via-romana",
+	"status": "publish",
+	"type": "schools",
+	"link": "http:\/\/jesidea.com\/cercepois\/schools\/colegio-publico-ceip-via-romana\/",
+	"title": {
+		"rendered": "Colegio P\u00fablico CEIP \u201cVI\u0301A ROMANA\u201d"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Colegio P\u00fablico CEIP \u201cVI\u0301A ROMANA\u201d",
+	"naturaleza": "publico",
+	"tipo": ["infantil", "primaria"],
+	"direccion": "Avda de Blanca Fern\u00e1ndez Ochoa, 5",
+	"latlon": "40.7407684,-4.0488405",
+	"anchorlink": "viaromana",
+	"tfnos": "Telf.: 91 852 05 75",
+	"website": "http:\/\/www.educa.madrid.org\/cp.viaromana.cercedilla",
+	"image_front": {
+		"ID": "102",
+		"post_author": "1",
+		"post_date": "2017-03-07 21:28:04",
+		"post_date_gmt": "2017-03-07 21:28:04",
+		"post_content": "",
+		"post_title": "via_romana_popup",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "via_romana_popup",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-04-13 15:30:21",
+		"post_modified_gmt": "2017-04-13 15:30:21",
+		"post_content_filtered": "",
+		"post_parent": "36",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/via_romana_popup.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "102"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2kRT4bl",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school\/36"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/schools"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=36"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 35,
+	"date": "2016-08-17T15:34:09",
+	"date_gmt": "2016-08-17T15:34:09",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=ccpoi_school&#038;p=35"
+	},
+	"modified": "2017-04-13T15:30:42",
+	"modified_gmt": "2017-04-13T15:30:42",
+	"slug": "escuela-infantil-y-aula-de-casa-de-ninos-rincon-florido",
+	"status": "publish",
+	"type": "schools",
+	"link": "http:\/\/jesidea.com\/cercepois\/schools\/escuela-infantil-y-aula-de-casa-de-ninos-rincon-florido\/",
+	"title": {
+		"rendered": "Escuela Infantil  Y Aula de Casa de ni\u00f1os \u201cRINCO\u0301N FLORIDO\u201d"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Escuela Infantil  Y Aula de Casa de ni\u00f1os \u201cRINCO\u0301N FLORIDO\u201d",
+	"naturaleza": "publico",
+	"tipo": ["guarderia"],
+	"direccion": "Carretera de los Molinos ,23,C",
+	"latlon": "40.7314186,-4.0680699",
+	"anchorlink": "rinconflorido",
+	"tfnos": "Telf.: 91 852 39 40",
+	"website": "http:\/\/www.eirinconflorido.es",
+	"image_front": {
+		"ID": "103",
+		"post_author": "1",
+		"post_date": "2017-03-07 21:33:14",
+		"post_date_gmt": "2017-03-07 21:33:14",
+		"post_content": "",
+		"post_title": "rincon_florido_popup",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "rincon_florido_popup",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2017-04-13 15:30:42",
+		"post_modified_gmt": "2017-04-13 15:30:42",
+		"post_content_filtered": "",
+		"post_parent": "35",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2016\/08\/rincon_florido_popup.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "103"
+	},
+	"google_streetview_link": "http:\/\/bit.ly\/2kswiWk",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school\/35"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/school"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/schools"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=35"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>GeoJSON generated files in github ccpois2geojson</h2>
+      <p>
+        hosted in
+        <a
+          href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson"
+          >https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson</a
+        >
+        for secure http
+      </p>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_schools.json"
+            >ccpois_schools.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_health.json"
+            >ccpois_health.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_food.json"
+            >ccpois_food.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_muniservice.json"
+            >ccpois_muniservice.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_clothes.json"
+            >ccpois_clothes.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_bazaars.json"
+            >ccpois_bazaars.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_banks.json"
+            >ccpois_banks.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_police.json"
+            >ccpois_police.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_bazares_chinos.json"
+            >ccpois_bazares_chinos.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_talleres_mecanicos.json"
+            >ccpois_talleres_mecanicos.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_ferreterias.json"
+            >ccpois_ferreterias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_peluquerias.json"
+            >ccpois_peluquerias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_mascotas.json"
+            >ccpois_mascotas.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_floristerias.json"
+            >ccpois_floristerias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_fruterias.json"
+            >ccpois_fruterias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_pescaderias.json"
+            >ccpois_pescaderias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_panaderias.json"
+            >ccpois_panaderias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_carnicerias.json"
+            >ccpois_carnicerias.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_supermercados.json"
+            >ccpois_supermercados.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_centros_culturales.json"
+            >ccpois_centros_culturales.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_zonas_infantiles.json"
+            >ccpois_zonas_infantiles.json</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response (schools)</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"type": "FeatureCollection",
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"wpid": 58,
+			"name": "COLEGIO CONCERTADO “REGINA ASSUMPTA”",
+			"type": "schools",
+			"subtype": "infantil",
+			"nature": "concertado",
+			"address": "Calle San Andrés 9",
+			"image_front_for_facebook_app": "https://cercemap.org/img/regina_asumpta_2_popup.png",
+			"image_front": "http://jesidea.com/cercepois/wp-content/uploads/2016/08/regina_asumpta_2_popup.png",
+			"tfnos": "Tfno: 918 520 313  Fax: 918 525 511",
+			"google_streetview_link": "http://bit.ly/2jVqLEr",
+			"website": "http://www.reginaassumpta.es/"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-4.058405900000025, 40.7382819]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"wpid": 38,
+			"name": "Escuela de Música y Danza Joaquin Sorolla",
+			"type": "schools",
+			"subtype": "escuela_de_musica",
+			"nature": "publico",
+			"address": "Calle Carrera del Señor,7",
+			"image_front_for_facebook_app": "https://cercemap.org/img/escuela_musica_joaquin_sorolla_popup.png",
+			"image_front": "http://jesidea.com/cercepois/wp-content/uploads/2016/08/escuela_musica_joaquin_sorolla_popup.png",
+			"tfnos": "Teléfonos: 91 852 36 20 – 628 542 386. Fax: 91 852 36 20",
+			"google_streetview_link": "http://bit.ly/2jXNPVy",
+			"website": "http://www.cercedilla.es/escuela-de-musica/"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-4.0569878, 40.7410278]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"wpid": 37,
+			"name": "IES “LA DEHESILLA”",
+			"type": "schools",
+			"subtype": "secundaria",
+			"nature": "publico",
+			"address": "Camino De la Dehesilla y Rodeo, S/N",
+			"image_front_for_facebook_app": "https://cercemap.org/img/ies_dehesilla_popup.png",
+			"image_front": "http://jesidea.com/cercepois/wp-content/uploads/2016/08/ies_dehesilla_popup.png",
+			"tfnos": "Telf.: 91 852 17 63",
+			"google_streetview_link": "http://bit.ly/2jwiY3P",
+			"website": "http://www.educa.madrid.org/ies.ladehesilla.cercedilla"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-4.0439448, 40.7332726]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"wpid": 36,
+			"name": "Colegio Público CEIP “VÍA ROMANA”",
+			"type": "schools",
+			"subtype": "infantil",
+			"nature": "publico",
+			"address": "Avda de Blanca Fernández Ochoa, 5",
+			"image_front_for_facebook_app": "https://cercemap.org/img/via_romana_popup.png",
+			"image_front": "http://jesidea.com/cercepois/wp-content/uploads/2016/08/via_romana_popup.png",
+			"tfnos": "Telf.: 91 852 05 75",
+			"google_streetview_link": "http://bit.ly/2kRT4bl",
+			"website": "http://www.educa.madrid.org/cp.viaromana.cercedilla"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-4.0488405, 40.7407684]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"wpid": 35,
+			"name": "Escuela Infantil  Y Aula de Casa de niños “RINCÓN FLORIDO”",
+			"type": "schools",
+			"subtype": "guarderia",
+			"nature": "publico",
+			"address": "Carretera de los Molinos ,23,C",
+			"image_front_for_facebook_app": "https://cercemap.org/img/rincon_florido_popup.png",
+			"image_front": "http://jesidea.com/cercepois/wp-content/uploads/2016/08/rincon_florido_popup.png",
+			"tfnos": "Telf.: 91 852 39 40",
+			"google_streetview_link": "http://bit.ly/2kswiWk",
+			"website": "http://www.eirinconflorido.es"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-4.0680699, 40.7314186]
+		}
+	}]
+}
+          </code></pre>
+        </div>
+      </div>
+    </section>
+    <!--
+      	PUBLIC_TRANSPORTS:
+		"https://raw.githubusercontent.com/jescacena/mordorg/master/ccpois2geojson/json/ccpois_public_transports.json",
+    -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

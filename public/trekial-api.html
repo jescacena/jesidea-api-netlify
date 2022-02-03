@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
     <title>[jesidea-open-api] Trekial</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
@@ -30,6 +30,12 @@
       <a href="http://jesidea.com/cercepois/wp-admin">wp-admin</a>
     </p>
 
+	<img
+        class="pod-capture"
+        src="/images/trekial-entities.png"
+        alt="trekial-entities"
+      />
+	  
     <section>
       <h2>Quiz</h2>
       <ul class="list-apis">
@@ -1402,6 +1408,171 @@
     </section>
 
     <section>
+      <h2>Response</h2>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_responses/812"
+            >Single Response by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_responses/812</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_responses"
+            >All Responses -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_responses</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for single response</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 812,
+	"date": "2019-01-10T14:41:32",
+	"date_gmt": "2019-01-10T14:41:32",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=812"
+	},
+	"modified": "2019-01-10T14:41:32",
+	"modified_gmt": "2019-01-10T14:41:32",
+	"slug": "puerto-de-malagon-monte-abantos-conoce-san-lorenzo",
+	"status": "publish",
+	"type": "guquiz_responses",
+	"link": "http:\/\/jesidea.com\/cercepois\/guquiz-responses\/puerto-de-malagon-monte-abantos-conoce-san-lorenzo\/",
+	"title": {
+		"rendered": "Puerto de Malag..."
+	},
+	"content": {
+		"rendered": "Puerto de Malag...",
+		"protected": false
+	},
+	"template": "",
+	"texto": "Puerto de Malag\u00f3n",
+	"descripcion": "...",
+	"coordenadas": "40.6166648,-4.1675096,14",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_responses\/812"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_responses"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz_responses"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=812"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}
+			</code></pre>
+        </div>
+      </div>
+
+	<img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-response.png"
+        alt="trekial-pod-entity-response"
+      />
+    </section>
+
+	    <section>
+      <h2>Tag</h2>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_tags/821"
+            >Single Tag by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_tags/821</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_tags"
+            >All Tags -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_tags</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for single tag</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 821,
+	"date": "2019-01-15T13:24:25",
+	"date_gmt": "2019-01-15T13:24:25",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_tags&#038;p=821"
+	},
+	"modified": "2019-01-15T13:24:25",
+	"modified_gmt": "2019-01-15T13:24:25",
+	"slug": "picos_de_europa",
+	"status": "publish",
+	"type": "guquiz_tags",
+	"link": "http:\/\/jesidea.com\/cercepois\/guquiz-tags\/picos_de_europa\/",
+	"title": {
+		"rendered": "picos_de_europa"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"template": "",
+	"code": "picos_de_europa",
+	"label": "Picos de Europa",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_tags\/821"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_tags"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz_tags"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=821"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}
+			</code></pre>
+        </div>
+      </div>
+
+	<img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-tag.png"
+        alt="trekial-pod-entity-tag"
+      />
+    </section>
+
+    <section>
       <h2>Author</h2>
 
       <ul class="list-apis">
@@ -1509,6 +1680,6 @@
       />
     </section>
 
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
