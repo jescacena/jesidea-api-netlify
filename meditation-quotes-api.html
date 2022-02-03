@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Meditation Quotes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <h1>Meditation Quotes</h1>
+
+    <p>Hosted in https://cercemap.org/ for secure http</p>
+
+    <p>
+      <a href="https://cercemap.org/resources/quotes/meditation-quotes.json"
+        >https://cercemap.org/resources/quotes/meditation-quotes.json</a
+      >
+    </p>
+    <div class="dropdown-container">
+      <a href="#" class="dropdown-link">Example response</a>
+      <div class="dropdown-content">
+        <pre><code class="language-json">
+        {
+            "name": "Meditation Quotes",
+            "data": [
+                {
+                    "text": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
+                    "author": "Thich Nhat Hahn"
+                },
+                {
+                    "text": "To understand the immeasurable, the mind must be extraordinarily quiet, still.",
+                    "author": "Jiddu Krishnamurti"
+                },
+            ]
+        }
+        </code></pre>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

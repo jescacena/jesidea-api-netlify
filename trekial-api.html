@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Trekial</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <h1>Trekial</h1>
+
+    <p>
+      Hosted in http://jesidea.com/cercepois wordpress with Pods:
+      <a href="http://jesidea.com/cercepois/wp-admin">wp-admin</a>
+    </p>
+
+    <section>
+      <h2>Quiz</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz/802"
+            >Single Quiz by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz/802</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz"
+            >All Quizzes -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response for single quiz</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+                {
+                    "id": 802,
+                    "date": "2019-01-07T17:37:46",
+                    "date_gmt": "2019-01-07T17:37:46",
+                    "guid": {
+                        "rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=802"
+                    },
+                    "modified": "2019-01-15T07:43:04",
+                    "modified_gmt": "2019-01-15T07:43:04",
+                    "slug": "a-quien-homenajea-este-reloj-de-sol-vamos-de-monumentos",
+                    "status": "publish",
+                    "type": "guquiz",
+                    "link": "http:\/\/jesidea.com\/cercepois\/guquiz\/a-quien-homenajea-este-reloj-de-sol-vamos-de-monumentos\/",
+                    "title": {
+                        "rendered": "\u00bfA qui\u00e9n homenajea este reloj de sol? &#8212; Vamos de monumentos"
+                    },
+                    "content": {
+                        "rendered": "\u00bfA qui\u00e9n homenajea este reloj de sol? &#8212; Vamos de monumentos\n",
+                        "protected": false
+                    },
+                    "template": "",
+                    "question": "\u00bfA qui\u00e9n homenajea este reloj de sol?",
+                    "location": "40.7662764,-4.0569679,17",
+                    "image": {
+                        "ID": "730",
+                        "post_author": "1",
+                        "post_date": "2018-12-03 10:53:09",
+                        "post_date_gmt": "2018-12-03 10:53:09",
+                        "post_content": "",
+                        "post_title": "Monumento-primeros-caminantes-sierra-guadarrama",
+                        "post_excerpt": "",
+                        "post_status": "inherit",
+                        "comment_status": "open",
+                        "ping_status": "closed",
+                        "post_password": "",
+                        "post_name": "monumento-primeros-caminantes-sierra-guadarrama",
+                        "to_ping": "",
+                        "pinged": "",
+                        "post_modified": "2019-01-15 13:25:51",
+                        "post_modified_gmt": "2019-01-15 13:25:51",
+                        "post_content_filtered": "",
+                        "post_parent": "714",
+                        "guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/11\/Monumento-primeros-caminantes-sierra-guadarrama.jpg",
+                        "menu_order": "0",
+                        "post_type": "attachment",
+                        "post_mime_type": "image\/jpeg",
+                        "comment_count": "0",
+                        "pod_item_id": "730"
+                    },
+                    "response_valid": [{
+                        "texto": "Reloj de sol Camilo Jose Cela",
+                        "descripcion": "...",
+                        "coordenadas": "40.7662764,-4.0569679,17",
+                        "ID": 800,
+                        "post_title": "Reloj de sol Camilo Jose Cela -- Vamos de monumentos",
+                        "post_content": "Reloj de sol Camilo Jose Cela -- Vamos de monumentos",
+                        "post_excerpt": "",
+                        "post_author": "1",
+                        "post_date": "2019-01-07 17:35:57",
+                        "post_date_gmt": "2019-01-07 17:35:57",
+                        "post_status": "publish",
+                        "comment_status": "closed",
+                        "ping_status": "closed",
+                        "post_password": "",
+                        "post_name": "reloj-de-sol-camilo-jose-cela-vamos-de-monumentos",
+                        "to_ping": "",
+                        "pinged": "",
+                        "post_modified": "2019-01-15 07:43:25",
+                        "post_modified_gmt": "2019-01-15 07:43:25",
+                        "post_content_filtered": "",
+                        "post_parent": [],
+                        "guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=800",
+                        "menu_order": 0,
+                        "post_type": "guquiz_responses",
+                        "post_mime_type": "",
+                        "comment_count": "0",
+                        "id": 800
+                    }],
+                    "response_valid_text": "",
+                    "response_fake_1": false,
+                    "response_fake_text_1": "Vicente Aleixandre",
+                    "response_fake_2": false,
+                    "response_fake_text_2": "Carlos Soria",
+                    "_links": {
+                        "self": [{
+                            "href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz\/802"
+                        }],
+                        "collection": [{
+                            "href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz"
+                        }],
+                        "about": [{
+                            "href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz"
+                        }],
+                        "wp:attachment": [{
+                            "href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=802"
+                        }],
+                        "curies": [{
+                            "name": "wp",
+                            "href": "https:\/\/api.w.org\/{rel}",
+                            "templated": true
+                        }]
+                    }
+                }
+            </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-quiz.png"
+        alt="trekial-pod-entity-author"
+      />
+    </section>
+
+    <section>
+      <h2>Challenge</h2>
+      <h3>Group of related quizzes</h3>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_challenge/805"
+            >Single Challenge by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_challenge/805</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_challenge"
+            >All Challenges -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_challenge</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for single Challenge</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 805,
+	"date": "2019-01-10T14:06:16",
+	"date_gmt": "2019-01-10T14:06:16",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_challenge&#038;p=805"
+	},
+	"modified": "2019-01-15T13:23:08",
+	"modified_gmt": "2019-01-15T13:23:08",
+	"slug": "conoce-san-lorenzo-del-escorial",
+	"status": "publish",
+	"type": "guquiz_challenge",
+	"link": "http:\/\/jesidea.com\/cercepois\/guquiz-challenge\/conoce-san-lorenzo-del-escorial\/",
+	"title": {
+		"rendered": "Conoce San Lorenzo del Escorial"
+	},
+	"content": {
+		"rendered": "<p>Conoce San Lorenzo del Escorial<\/p>\n",
+		"protected": false
+	},
+	"template": "",
+	"titulo": "Conoce San Lorenzo del Escorial",
+	"autor": [{
+		"nombre": "Javier Escacena",
+		"presentacion": "...",
+		"email": "javier.escacena@gmail.com",
+		"avatar": {
+			"ID": "760",
+			"post_author": "1",
+			"post_date": "2019-01-01 21:18:50",
+			"post_date_gmt": "2019-01-01 21:18:50",
+			"post_content": "",
+			"post_title": "Screenshot 2019-01-01 at 13.04.10",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "screenshot-2019-01-01-at-13-04-10",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2019-01-22 10:04:43",
+			"post_modified_gmt": "2019-01-22 10:04:43",
+			"post_content_filtered": "",
+			"post_parent": "759",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2019\/01\/Screenshot-2019-01-01-at-13.04.10.png",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/png",
+			"comment_count": "0",
+			"pod_item_id": "760"
+		},
+		"tfno": "",
+		"ID": 759,
+		"post_title": "Javier Escacena",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2019-01-01 21:19:12",
+		"post_date_gmt": "2019-01-01 21:19:12",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "javier-escacena",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-22 10:04:43",
+		"post_modified_gmt": "2019-01-22 10:04:43",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_authors&#038;p=759",
+		"menu_order": 0,
+		"post_type": "guquiz_authors",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 759
+	}],
+	"imagen": {
+		"ID": "676",
+		"post_author": "1",
+		"post_date": "2018-07-28 16:17:35",
+		"post_date_gmt": "2018-07-28 16:17:35",
+		"post_content": "",
+		"post_title": "monasterio_san_lorenzo",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "monasterio_san_lorenzo",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-15 13:23:08",
+		"post_modified_gmt": "2019-01-15 13:23:08",
+		"post_content_filtered": "",
+		"post_parent": "675",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/07\/monasterio_san_lorenzo.jpg",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/jpeg",
+		"comment_count": "0",
+		"pod_item_id": "676"
+	},
+	"resumen": "San Lorenzo de El Escorial es un municipio de la provincia de Madrid situado en el noroeste de la regi\u00f3n, en la vertiente suroriental de la sierra de Guadarrama",
+	"dificultad": ["intermedia"],
+	"tags": [{
+		"code": "san_lorenzo_del_escorial",
+		"label": "San Lorenzo del Escorial",
+		"ID": 819,
+		"post_title": "san_lorenzo_del_escorial",
+		"post_content": "san_lorenzo_del_escorial",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2019-01-15 13:21:58",
+		"post_date_gmt": "2019-01-15 13:21:58",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "san_lorenzo_del_escorial",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-15 13:21:58",
+		"post_modified_gmt": "2019-01-15 13:21:58",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_tags&#038;p=819",
+		"menu_order": 0,
+		"post_type": "guquiz_tags",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 819
+	}, {
+		"code": "sierra_del_guadarrama",
+		"label": "Sierra del Guadarrama",
+		"ID": 818,
+		"post_title": "sierra_del_guadarrama",
+		"post_content": "sierra_del_guadarrama",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2019-01-15 13:21:29",
+		"post_date_gmt": "2019-01-15 13:21:29",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "sierra_del_guadarrama",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-15 13:21:29",
+		"post_modified_gmt": "2019-01-15 13:21:29",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_tags&#038;p=818",
+		"menu_order": 0,
+		"post_type": "guquiz_tags",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 818
+	}],
+	"quiz_1": [{
+		"question": "\u00bfQu\u00e9 tipo de edificio es el de la foto?",
+		"location": "",
+		"image": {
+			"ID": "676",
+			"post_author": "1",
+			"post_date": "2018-07-28 16:17:35",
+			"post_date_gmt": "2018-07-28 16:17:35",
+			"post_content": "",
+			"post_title": "monasterio_san_lorenzo",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "monasterio_san_lorenzo",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2019-01-15 13:23:08",
+			"post_modified_gmt": "2019-01-15 13:23:08",
+			"post_content_filtered": "",
+			"post_parent": "675",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/07\/monasterio_san_lorenzo.jpg",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/jpeg",
+			"comment_count": "0",
+			"pod_item_id": "676"
+		},
+		"response_valid": {
+			"697": {
+				"texto": "Monasterio de San Lorenzo del Escorial",
+				"descripcion": "...",
+				"coordenadas": "40.5890408,-4.1477268,15",
+				"ID": 697,
+				"post_title": "Monasterio de San Lorenzo del Escorial",
+				"post_content": "Monasterio",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-11-25 09:50:26",
+				"post_date_gmt": "2018-11-25 09:50:26",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "monasterio",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-03 14:31:13",
+				"post_modified_gmt": "2019-01-03 14:31:13",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=697",
+				"menu_order": 0,
+				"post_type": "guquiz_responses",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 697
+			}
+		},
+		"response_valid_text": "",
+		"response_fake_1": {
+			"695": {
+				"texto": "Abadia",
+				"descripcion": "",
+				"coordenadas": "",
+				"ID": 695,
+				"post_title": "Abadia",
+				"post_content": "...",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-11-25 09:49:52",
+				"post_date_gmt": "2018-11-25 09:49:52",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "abadia",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-11-25 09:49:52",
+				"post_modified_gmt": "2018-11-25 09:49:52",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=695",
+				"menu_order": 0,
+				"post_type": "guquiz_responses",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 695
+			}
+		},
+		"response_fake_text_1": "",
+		"response_fake_2": {
+			"696": {
+				"texto": "Palacio",
+				"descripcion": "",
+				"coordenadas": "",
+				"ID": 696,
+				"post_title": "Palacio",
+				"post_content": "...",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-11-25 09:50:08",
+				"post_date_gmt": "2018-11-25 09:50:08",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "palacio",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2018-11-25 09:50:08",
+				"post_modified_gmt": "2018-11-25 09:50:08",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=696",
+				"menu_order": 0,
+				"post_type": "guquiz_responses",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 696
+			}
+		},
+		"response_fake_text_2": "",
+		"ID": 675,
+		"post_title": "\u00bfQu\u00e9 tipo de edificio es el de la foto? - Monasterio San Lorenzo del Escorial",
+		"post_content": "",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-07-28 16:19:39",
+		"post_date_gmt": "2018-07-28 16:19:39",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "monasterio-san-lorenzo-del-escorial",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-03 14:41:45",
+		"post_modified_gmt": "2019-01-03 14:41:45",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=675",
+		"menu_order": 0,
+		"post_type": "guquiz",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 675
+	}],
+	"quiz_2": [{
+		"question": "\u00bfQu\u00e9 nombre tiene este mirador?",
+		"location": "40.5683263,-4.1548943,17",
+		"image": {
+			"ID": "808",
+			"post_author": "1",
+			"post_date": "2019-01-10 14:18:51",
+			"post_date_gmt": "2019-01-10 14:18:51",
+			"post_content": "",
+			"post_title": "Silla_de_Felipe_II",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "silla_de_felipe_ii",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2019-01-10 14:23:05",
+			"post_modified_gmt": "2019-01-10 14:23:05",
+			"post_content_filtered": "",
+			"post_parent": "807",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2019\/01\/Silla_de_Felipe_II.jpg",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/jpeg",
+			"comment_count": "0",
+			"pod_item_id": "808"
+		},
+		"response_valid": {
+			"809": {
+				"texto": "Silla de Felipe II",
+				"descripcion": "...",
+				"coordenadas": "40.5683263,-4.1548943,17",
+				"ID": 809,
+				"post_title": "Silla de Felipe II -- Conoce San Lorenzo",
+				"post_content": "Silla de Felipe II -- Conoce San Lorenzo",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2019-01-10 14:22:50",
+				"post_date_gmt": "2019-01-10 14:22:50",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "silla-de-felipe-ii-conoce-san-lorenzo",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-10 14:22:50",
+				"post_modified_gmt": "2019-01-10 14:22:50",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=809",
+				"menu_order": 0,
+				"post_type": "guquiz_responses",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 809
+			}
+		},
+		"response_valid_text": "",
+		"response_fake_1": [],
+		"response_fake_text_1": "Mirador del Monasterio",
+		"response_fake_2": [],
+		"response_fake_text_2": "Observatorio Camilo Jose Cela",
+		"ID": 807,
+		"post_title": "\u00bfQu\u00e9 nombre tiene este mirador? -- Silla de Felipe II",
+		"post_content": "\u00bfQu\u00e9 nombre tiene este mirador? -- Silla de Felipe II",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2019-01-10 14:21:05",
+		"post_date_gmt": "2019-01-10 14:21:05",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "que-nombre-tiene-este-mirador-silla-de-felipe-ii",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-10 14:23:05",
+		"post_modified_gmt": "2019-01-10 14:23:05",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=807",
+		"menu_order": 0,
+		"post_type": "guquiz",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 807
+	}],
+	"quiz_3": [{
+		"question": "\u00bfCon qu\u00e9 otro nombre se conoce al Monte Abantos?",
+		"location": "40.6166648,-4.1675096,14",
+		"image": {
+			"ID": "811",
+			"post_author": "1",
+			"post_date": "2019-01-10 14:38:59",
+			"post_date_gmt": "2019-01-10 14:38:59",
+			"post_content": "",
+			"post_title": "2560px-Abantos_sur",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "2560px-abantos_sur",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2019-01-10 14:41:47",
+			"post_modified_gmt": "2019-01-10 14:41:47",
+			"post_content_filtered": "",
+			"post_parent": "810",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2019\/01\/2560px-Abantos_sur.jpg",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/jpeg",
+			"comment_count": "0",
+			"pod_item_id": "811"
+		},
+		"response_valid": {
+			"812": {
+				"texto": "Puerto de Malag\u00f3n",
+				"descripcion": "...",
+				"coordenadas": "40.6166648,-4.1675096,14",
+				"ID": 812,
+				"post_title": "Puerto de Malag\u00f3n -- Monte Abantos -- Conoce San Lorenzo",
+				"post_content": "Puerto de Malag\u00f3n -- Monte Abantos -- Conoce San Lorenzo",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2019-01-10 14:41:32",
+				"post_date_gmt": "2019-01-10 14:41:32",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "puerto-de-malagon-monte-abantos-conoce-san-lorenzo",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-10 14:41:32",
+				"post_modified_gmt": "2019-01-10 14:41:32",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=812",
+				"menu_order": 0,
+				"post_type": "guquiz_responses",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 812
+			}
+		},
+		"response_valid_text": "",
+		"response_fake_1": [],
+		"response_fake_text_1": "Monte del Destino",
+		"response_fake_2": [],
+		"response_fake_text_2": "Pico del Monasterio",
+		"ID": 810,
+		"post_title": "\u00bfCon qu\u00e9 otro nombre se conoce al Monte Abantos? -- Conoce San Lorenzo",
+		"post_content": "\u00bfCon qu\u00e9 otro nombre se conoce al Monte Abantos? -- Conoce San Lorenzo",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2019-01-10 14:39:29",
+		"post_date_gmt": "2019-01-10 14:39:29",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "con-que-otro-nombre-se-conoce-al-monte-abantos-conoce-san-lorenzo",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-10 14:41:47",
+		"post_modified_gmt": "2019-01-10 14:41:47",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=810",
+		"menu_order": 0,
+		"post_type": "guquiz",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 810
+	}],
+	"quiz_4": false,
+	"quiz_5": false,
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_challenge\/805"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_challenge"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz_challenge"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=805"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}ƒ
+            </code></pre>
+        </div>
+      </div>
+      <img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-challenge.png"
+        alt="trekial-pod-entity-author"
+      />
+    </section>
+
+    <section>
+      <h2>Category</h2>
+      <h3>Group of related Challenges</h3>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_group/717"
+            >Single Category by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_group/717</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_group"
+            >All Categories -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_group</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link"
+          >Example response for single Category</a
+        >
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": 717,
+	"date": "2018-11-29T11:11:00",
+	"date_gmt": "2018-11-29T11:11:00",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_group&#038;p=717"
+	},
+	"modified": "2018-11-29T11:11:00",
+	"modified_gmt": "2018-11-29T11:11:00",
+	"slug": "sierra-de-gredos-proximamente",
+	"status": "publish",
+	"type": "guquiz_group",
+	"link": "http:\/\/jesidea.com\/cercepois\/guquiz-group\/sierra-de-gredos-proximamente\/",
+	"title": {
+		"rendered": "Sierra de Gredos (Proximamente)"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"titulo": "Sierra de Gredos (Proximamente)",
+	"list": [{
+		"titulo": "Pateo por las alturas",
+		"autor": {
+			"759": {
+				"nombre": "Javier Escacena",
+				"presentacion": "...",
+				"email": "javier.escacena@gmail.com",
+				"avatar": {
+					"ID": "760",
+					"post_author": "1",
+					"post_date": "2019-01-01 21:18:50",
+					"post_date_gmt": "2019-01-01 21:18:50",
+					"post_content": "",
+					"post_title": "Screenshot 2019-01-01 at 13.04.10",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "screenshot-2019-01-01-at-13-04-10",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2019-01-22 10:04:43",
+					"post_modified_gmt": "2019-01-22 10:04:43",
+					"post_content_filtered": "",
+					"post_parent": "759",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2019\/01\/Screenshot-2019-01-01-at-13.04.10.png",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/png",
+					"comment_count": "0",
+					"pod_item_id": "760"
+				},
+				"tfno": "",
+				"ID": 759,
+				"post_title": "Javier Escacena",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2019-01-01 21:19:12",
+				"post_date_gmt": "2019-01-01 21:19:12",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "javier-escacena",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-22 10:04:43",
+				"post_modified_gmt": "2019-01-22 10:04:43",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_authors&#038;p=759",
+				"menu_order": 0,
+				"post_type": "guquiz_authors",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 759
+			}
+		},
+		"imagen": {
+			"ID": "729",
+			"post_author": "1",
+			"post_date": "2018-12-03 10:52:15",
+			"post_date_gmt": "2018-12-03 10:52:15",
+			"post_content": "",
+			"post_title": "splash2",
+			"post_excerpt": "",
+			"post_status": "inherit",
+			"comment_status": "open",
+			"ping_status": "closed",
+			"post_password": "",
+			"post_name": "splash2",
+			"to_ping": "",
+			"pinged": "",
+			"post_modified": "2019-01-15 13:25:34",
+			"post_modified_gmt": "2019-01-15 13:25:34",
+			"post_content_filtered": "",
+			"post_parent": "715",
+			"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/11\/splash2.jpg",
+			"menu_order": "0",
+			"post_type": "attachment",
+			"post_mime_type": "image\/jpeg",
+			"comment_count": "0",
+			"pod_item_id": "729"
+		},
+		"resumen": "Sierra de Guadarrama",
+		"dificultad": "avanzada",
+		"tags": {
+			"818": {
+				"code": "sierra_del_guadarrama",
+				"label": "Sierra del Guadarrama",
+				"ID": 818,
+				"post_title": "sierra_del_guadarrama",
+				"post_content": "sierra_del_guadarrama",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2019-01-15 13:21:29",
+				"post_date_gmt": "2019-01-15 13:21:29",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "sierra_del_guadarrama",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-15 13:21:29",
+				"post_modified_gmt": "2019-01-15 13:21:29",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_tags&#038;p=818",
+				"menu_order": 0,
+				"post_type": "guquiz_tags",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 818
+			}
+		},
+		"quiz_1": {
+			"665": {
+				"question": "\u00bfQu\u00e9 pico es el de la foto?",
+				"location": "",
+				"image": {
+					"ID": "666",
+					"post_author": "1",
+					"post_date": "2018-07-28 15:32:07",
+					"post_date_gmt": "2018-07-28 15:32:07",
+					"post_content": "",
+					"post_title": "Vista_de_las_Cabezas",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "vista_de_las_cabezas",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-12-21 11:47:50",
+					"post_modified_gmt": "2018-12-21 11:47:50",
+					"post_content_filtered": "",
+					"post_parent": "665",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/07\/Vista_de_las_Cabezas.jpeg",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/jpeg",
+					"comment_count": "0",
+					"pod_item_id": "666"
+				},
+				"response_valid": {
+					"702": {
+						"texto": "Cabezas de Hierro",
+						"descripcion": "...",
+						"coordenadas": "40.8005541,-3.9491766,14",
+						"ID": 702,
+						"post_title": "Cabezas de Hierro",
+						"post_content": "Cabezas de Hierro",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:52:40",
+						"post_date_gmt": "2018-11-25 09:52:40",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "cabezas-de-hierro",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2019-01-03 13:15:49",
+						"post_modified_gmt": "2019-01-03 13:15:49",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=702",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 702
+					}
+				},
+				"response_valid_text": "",
+				"response_fake_1": {
+					"701": {
+						"texto": "Siete Picos",
+						"descripcion": "",
+						"coordenadas": "",
+						"ID": 701,
+						"post_title": "Siete Picos",
+						"post_content": "...",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:52:04",
+						"post_date_gmt": "2018-11-25 09:52:04",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "siete-picos",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2018-11-25 09:52:04",
+						"post_modified_gmt": "2018-11-25 09:52:04",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=701",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 701
+					}
+				},
+				"response_fake_text_1": "",
+				"response_fake_2": {
+					"694": {
+						"texto": "La Maliciosa",
+						"descripcion": "...",
+						"coordenadas": "40.765917,-3.96821,14",
+						"ID": 694,
+						"post_title": "La Maliciosa",
+						"post_content": "La Maliciosa",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:49:19",
+						"post_date_gmt": "2018-11-25 09:49:19",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "la-maliciosa",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2019-01-03 14:40:56",
+						"post_modified_gmt": "2019-01-03 14:40:56",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=694",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 694
+					}
+				},
+				"response_fake_text_2": "",
+				"ID": 665,
+				"post_title": "\u00bfQu\u00e9 pico es el de la foto? - Cabezas de Hierro",
+				"post_content": "m,n,",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-07-28 15:34:59",
+				"post_date_gmt": "2018-07-28 15:34:59",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "cabezas-de-hierro",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-03 14:41:51",
+				"post_modified_gmt": "2019-01-03 14:41:51",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=665",
+				"menu_order": 0,
+				"post_type": "guquiz",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 665
+			}
+		},
+		"quiz_2": {
+			"677": {
+				"question": "\u00bfCu\u00e1l es el pico que aparece en la foto a la derecha?",
+				"location": "",
+				"image": {
+					"ID": "678",
+					"post_author": "1",
+					"post_date": "2018-07-28 16:38:14",
+					"post_date_gmt": "2018-07-28 16:38:14",
+					"post_content": "",
+					"post_title": "OLYMPUS DIGITAL CAMERA",
+					"post_excerpt": "OLYMPUS DIGITAL CAMERA",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "olympus-digital-camera",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-12-21 11:47:06",
+					"post_modified_gmt": "2018-12-21 11:47:06",
+					"post_content_filtered": "",
+					"post_parent": "677",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/07\/Valle_barranca.jpg",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/jpeg",
+					"comment_count": "0",
+					"pod_item_id": "678"
+				},
+				"response_valid": {
+					"694": {
+						"texto": "La Maliciosa",
+						"descripcion": "...",
+						"coordenadas": "40.765917,-3.96821,14",
+						"ID": 694,
+						"post_title": "La Maliciosa",
+						"post_content": "La Maliciosa",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:49:19",
+						"post_date_gmt": "2018-11-25 09:49:19",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "la-maliciosa",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2019-01-03 14:40:56",
+						"post_modified_gmt": "2019-01-03 14:40:56",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=694",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 694
+					}
+				},
+				"response_valid_text": "",
+				"response_fake_1": {
+					"692": {
+						"texto": "La Pe\u00f1ota",
+						"descripcion": "",
+						"coordenadas": "",
+						"ID": 692,
+						"post_title": "La Pe\u00f1ota",
+						"post_content": "...",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:48:48",
+						"post_date_gmt": "2018-11-25 09:48:48",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "la-penota",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2018-11-25 09:48:48",
+						"post_modified_gmt": "2018-11-25 09:48:48",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=692",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 692
+					}
+				},
+				"response_fake_text_1": "",
+				"response_fake_2": {
+					"693": {
+						"texto": "Cumbre de Pe\u00f1alara",
+						"descripcion": "",
+						"coordenadas": "",
+						"ID": 693,
+						"post_title": "Cumbre de Pe\u00f1alara",
+						"post_content": "...",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:49:04",
+						"post_date_gmt": "2018-11-25 09:49:04",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "cumbre-de-penalara",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2018-11-25 09:49:04",
+						"post_modified_gmt": "2018-11-25 09:49:04",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=693",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 693
+					}
+				},
+				"response_fake_text_2": "",
+				"ID": 677,
+				"post_title": "...",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-07-28 16:39:00",
+				"post_date_gmt": "2018-07-28 16:39:00",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "la-maliciosa",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-03 14:41:41",
+				"post_modified_gmt": "2019-01-03 14:41:41",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=677",
+				"menu_order": 0,
+				"post_type": "guquiz",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 677
+			}
+		},
+		"quiz_3": {
+			"672": {
+				"question": "\u00bfC\u00f3mo se llama el mirador de la foto?",
+				"location": "",
+				"image": {
+					"ID": "673",
+					"post_author": "1",
+					"post_date": "2018-07-28 16:14:59",
+					"post_date_gmt": "2018-07-28 16:14:59",
+					"post_content": "",
+					"post_title": "mirador_gitaan",
+					"post_excerpt": "",
+					"post_status": "inherit",
+					"comment_status": "open",
+					"ping_status": "closed",
+					"post_password": "",
+					"post_name": "mirador_gitaan",
+					"to_ping": "",
+					"pinged": "",
+					"post_modified": "2018-12-21 11:47:37",
+					"post_modified_gmt": "2018-12-21 11:47:37",
+					"post_content_filtered": "",
+					"post_parent": "672",
+					"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2018\/07\/mirador_gitaan.jpeg",
+					"menu_order": "0",
+					"post_type": "attachment",
+					"post_mime_type": "image\/jpeg",
+					"comment_count": "0",
+					"pod_item_id": "673"
+				},
+				"response_valid": {
+					"698": {
+						"texto": "Mirador de la Gitana",
+						"descripcion": "...",
+						"coordenadas": "40.8260601,-3.9590384,17",
+						"ID": 698,
+						"post_title": "Mirador de la Gitana",
+						"post_content": "Mirador de la Gitana",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:50:57",
+						"post_date_gmt": "2018-11-25 09:50:57",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "mirador-de-la-gitana",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2019-01-03 14:28:49",
+						"post_modified_gmt": "2019-01-03 14:28:49",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=698",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 698
+					}
+				},
+				"response_valid_text": "",
+				"response_fake_1": {
+					"699": {
+						"texto": "Mirador de los Poetas",
+						"descripcion": "",
+						"coordenadas": "",
+						"ID": 699,
+						"post_title": "Mirador de los Poetas",
+						"post_content": "...",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:51:13",
+						"post_date_gmt": "2018-11-25 09:51:13",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "mirador-de-los-poetas",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2018-11-25 09:51:13",
+						"post_modified_gmt": "2018-11-25 09:51:13",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=699",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 699
+					}
+				},
+				"response_fake_text_1": "",
+				"response_fake_2": {
+					"700": {
+						"texto": "Mirador de Guadarrama",
+						"descripcion": "",
+						"coordenadas": "",
+						"ID": 700,
+						"post_title": "Mirador de Guadarrama",
+						"post_content": "...",
+						"post_excerpt": "",
+						"post_author": "1",
+						"post_date": "2018-11-25 09:51:30",
+						"post_date_gmt": "2018-11-25 09:51:30",
+						"post_status": "publish",
+						"comment_status": "closed",
+						"ping_status": "closed",
+						"post_password": "",
+						"post_name": "mirador-de-guadarrama",
+						"to_ping": "",
+						"pinged": "",
+						"post_modified": "2018-11-25 09:51:30",
+						"post_modified_gmt": "2018-11-25 09:51:30",
+						"post_content_filtered": "",
+						"post_parent": 0,
+						"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_responses&#038;p=700",
+						"menu_order": 0,
+						"post_type": "guquiz_responses",
+						"post_mime_type": "",
+						"comment_count": "0",
+						"id": 700
+					}
+				},
+				"response_fake_text_2": "",
+				"ID": 672,
+				"post_title": "\u00bfC\u00f3mo se llama el mirador de la foto? - Mirador de la Gitana",
+				"post_content": "",
+				"post_excerpt": "",
+				"post_author": "1",
+				"post_date": "2018-07-28 16:16:10",
+				"post_date_gmt": "2018-07-28 16:16:10",
+				"post_status": "publish",
+				"comment_status": "closed",
+				"ping_status": "closed",
+				"post_password": "",
+				"post_name": "mirador-de-la-gitana",
+				"to_ping": "",
+				"pinged": "",
+				"post_modified": "2019-01-03 14:41:48",
+				"post_modified_gmt": "2019-01-03 14:41:48",
+				"post_content_filtered": "",
+				"post_parent": [],
+				"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz&#038;p=672",
+				"menu_order": 0,
+				"post_type": "guquiz",
+				"post_mime_type": "",
+				"comment_count": "0",
+				"id": 672
+			}
+		},
+		"quiz_4": [],
+		"quiz_5": [],
+		"ID": 715,
+		"post_title": "Pateo por las alturas",
+		"post_content": "Pateo por las alturas",
+		"post_excerpt": "",
+		"post_author": "1",
+		"post_date": "2018-11-27 15:36:14",
+		"post_date_gmt": "2018-11-27 15:36:14",
+		"post_status": "publish",
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "pateo-por-las-alturas",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-15 13:25:34",
+		"post_modified_gmt": "2019-01-15 13:25:34",
+		"post_content_filtered": "",
+		"post_parent": [],
+		"guid": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_challenge&#038;p=715",
+		"menu_order": 0,
+		"post_type": "guquiz_challenge",
+		"post_mime_type": "",
+		"comment_count": "0",
+		"id": 715
+	}],
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_group\/717"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_group"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz_group"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=717"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}
+                      </code></pre>
+        </div>
+      </div>
+      <img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-category.png"
+        alt="trekial-pod-entity-author"
+      />
+    </section>
+
+    <section>
+      <h2>Author</h2>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_authors/759"
+            >Single Author by id -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_authors/759</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_authors"
+            >All Authors -->
+            http://jesidea.com/cercepois/wp-json/wp/v2/guquiz_authors</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response for single author</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+              {
+	"id": 759,
+	"date": "2019-01-01T21:19:12",
+	"date_gmt": "2019-01-01T21:19:12",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/cercepois\/?post_type=guquiz_authors&#038;p=759"
+	},
+	"modified": "2019-01-22T10:04:43",
+	"modified_gmt": "2019-01-22T10:04:43",
+	"slug": "javier-escacena",
+	"status": "publish",
+	"type": "guquiz_authors",
+	"link": "http:\/\/jesidea.com\/cercepois\/guquiz-authors\/javier-escacena\/",
+	"title": {
+		"rendered": "Javier Escacena"
+	},
+	"content": {
+		"rendered": "",
+		"protected": false
+	},
+	"template": "",
+	"nombre": "Javier Escacena",
+	"presentacion": "...",
+	"email": "javier.escacena@gmail.com",
+	"avatar": {
+		"ID": "760",
+		"post_author": "1",
+		"post_date": "2019-01-01 21:18:50",
+		"post_date_gmt": "2019-01-01 21:18:50",
+		"post_content": "",
+		"post_title": "Screenshot 2019-01-01 at 13.04.10",
+		"post_excerpt": "",
+		"post_status": "inherit",
+		"comment_status": "open",
+		"ping_status": "closed",
+		"post_password": "",
+		"post_name": "screenshot-2019-01-01-at-13-04-10",
+		"to_ping": "",
+		"pinged": "",
+		"post_modified": "2019-01-22 10:04:43",
+		"post_modified_gmt": "2019-01-22 10:04:43",
+		"post_content_filtered": "",
+		"post_parent": "759",
+		"guid": "http:\/\/jesidea.com\/cercepois\/wp-content\/uploads\/2019\/01\/Screenshot-2019-01-01-at-13.04.10.png",
+		"menu_order": "0",
+		"post_type": "attachment",
+		"post_mime_type": "image\/png",
+		"comment_count": "0",
+		"pod_item_id": "760"
+	},
+	"tfno": "",
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_authors\/759"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/guquiz_authors"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/types\/guquiz_authors"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/cercepois\/wp-json\/wp\/v2\/media?parent=759"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}
+              </code></pre>
+        </div>
+      </div>
+
+      <img
+        class="pod-capture"
+        src="/images/trekial-pod-entity-author.png"
+        alt="trekial-pod-entity-author"
+      />
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

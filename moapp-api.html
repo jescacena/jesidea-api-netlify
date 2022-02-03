@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Marvel Oldies</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <h1>Marvel Oldies</h1>
+
+    <p>Hosted in https://cercemap.org/ for secure http</p>
+
+    <section>
+      <h2>Ages</h2>
+      <p>
+        <a
+          target="_blank"
+          href="https://cercemap.org/resources/moapp/json/ages.json"
+        >
+          https://cercemap.org/resources/moapp/json/ages.json</a
+        >
+      </p>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+            [
+                {
+                    "key": "goldenAge",
+                    "name": "Golden Age",
+                    "period": "1930-1959",
+                    "img":"https://cercemap.org/resources/moapp/img/goldenAge.png"
+                },
+                {
+                    "key": "sixties",
+                    "name": "Sixties",
+                    "period": "1960-1969",
+                    "img":"https://cercemap.org/resources/moapp/img/sixties.png"
+                },
+                {
+                    "key": "seventies",
+                    "name": "Seventies",
+                    "period": "1970-1979",
+                    "img":"https://cercemap.org/resources/moapp/img/seventies-3.png"
+                },
+                {
+                    "key": "eighties",
+                    "name": "Eighties",
+                    "period": "1980-1989",
+                    "img":"https://cercemap.org/resources/moapp/img/eighties-4.png"
+                }
+
+            ]
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Characters</h2>
+      <h3>[age.key].characters.json</h3>
+
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="https://cercemap.org/resources/moapp/json/goldenAge.characters.json"
+            >https://cercemap.org/resources/moapp/json/goldenAge.characters.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://cercemap.org/resources/moapp/json/sixties.characters.json"
+            >https://cercemap.org/resources/moapp/json/sixties.characters.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://cercemap.org/resources/moapp/json/seventies.characters.json"
+            >https://cercemap.org/resources/moapp/json/seventies.characters.json</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://cercemap.org/resources/moapp/json/eighties.characters.json"
+            >https://cercemap.org/resources/moapp/json/eighties.characters.json</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+          [
+              {
+                  "name": "Ka-Zar",
+                  "description": "p>American <b>John Rand</b>'s plane crashes in the Congo jungle with <b>his wife Constance</b> and very <b>young son David</b> on board. After some time lost ...",
+                  "yearDebuted": "1936 (October)",
+                  "creators": "Bob Byrd",
+                  "firstAppearance": "Ka-Zar #1",
+                  "firstAppearanceUrl": "https://en.wikipedia.org/wiki/Ka-Zar_(magazine)",
+                  "img":"https://cercemap.org/resources/moapp/img/kazar.png"
+              },
+              {
+                  "name": "Namor (a.k.a. The Sub-Mariner)",
+                  "description":"The mutant son of a human sea captain and a ...",
+                  "yearDebuted": "1939 (April)",
+                  "creators": "Bill Everett",
+                  "firstAppearance": "Motion Picture Funnies Weekly #1",
+                  "firstAppearanceUrl": "https://en.wikipedia.org/wiki/Motion_Picture_Funnies_Weekly",
+                  "img":"https://cercemap.org/resources/moapp/img/namor.jpg"
+              },
+              ...
+
+          ]
+        </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
