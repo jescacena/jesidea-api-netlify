@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Onify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Onify Open API</h1>
+
+      <!-- Header nav -->
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p>
+      Hosted in http://jesidea.com/lacalma wordpress with Pods:
+      <a href="http://jesidea.com/lacalma/wp-admin">wp-admin</a>
+    </p>
+
+    <section>
+      <h2>Mp3 meditation songs</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=3&per_page=100"
+            >List meditation songs (max: 100) -->
+            http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=3&per_page=100</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response: </a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 178,
+	"date": "2022-01-08T19:48:19",
+	"date_gmt": "2022-01-08T19:48:19",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=178"
+	},
+	"modified": "2022-01-08T19:48:20",
+	"modified_gmt": "2022-01-08T19:48:20",
+	"slug": "buddhas-flute-tranquil-flute-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=178",
+	"title": {
+		"rendered": "Buddhas-Flute-Tranquil-Flute-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Buddhas-Flute-Tranquil-Flute-320-kbps.mp3",
+		"description": "Buddhas-Flute-Tranquil-Flute-320-kbps",
+		"duration": "03:00:21",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/budas-flute-calms-anxiety.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/178"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=178"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/178\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 180,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/178\/revisions\/180"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=178"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=178"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=178"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 173,
+	"date": "2022-01-08T19:44:35",
+	"date_gmt": "2022-01-08T19:44:35",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=173"
+	},
+	"modified": "2022-01-08T19:47:01",
+	"modified_gmt": "2022-01-08T19:47:01",
+	"slug": "buddhas-flute-calms-anxiety-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=173",
+	"title": {
+		"rendered": "Buddhas-Flute-Calms-Anxiety-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Buddhas-Flute-Calms-Anxiety-320-kbps.mp3",
+		"description": "Buddhas-Flute-Calms-Anxiety-320-kbps",
+		"duration": "03:01:10",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/budas-flute-calms-anxiety.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/173"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=173"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/173\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 176,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/173\/revisions\/176"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=173"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=173"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=173"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 170,
+	"date": "2022-01-08T19:37:04",
+	"date_gmt": "2022-01-08T19:37:04",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=170"
+	},
+	"modified": "2022-01-08T19:37:05",
+	"modified_gmt": "2022-01-08T19:37:05",
+	"slug": "tibetan-healing-sounds-cleans-the-aura-and-space-removes-all-negative-energy-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=170",
+	"title": {
+		"rendered": "Tibetan-Healing-Sounds-Cleans-the-Aura-and-Space-Removes-all-negative-energy-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Tibetan-Healing-Sounds-Cleans-the-Aura-and-Space-Removes-all-negative-energy-320-kbps.mp3",
+		"description": "Tibetan-Healing-Sounds-Cleans-the-Aura-and-Space-Removes-all-negative-energy-320-kbps",
+		"duration": "00:34:19",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/tibetans-healing-sounds.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/170"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=170"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/170\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 172,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/170\/revisions\/172"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=170"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=170"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=170"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 165,
+	"date": "2021-12-26T12:05:49",
+	"date_gmt": "2021-12-26T12:05:49",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=165"
+	},
+	"modified": "2021-12-26T12:05:50",
+	"modified_gmt": "2021-12-26T12:05:50",
+	"slug": "kundalini-mantra-for-awareness-sat-nam-mantra-meditation-with-meaning-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=165",
+	"title": {
+		"rendered": "KUNDALINI-MANTRA-for-AWARENESS-SAT-NAM-Mantra-Meditation-with-Meaning-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 166,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/KUNDALINI-MANTRA-for-AWARENESS-SAT-NAM-Mantra-Meditation-with-Meaning-320-kbps.mp3",
+		"description": "KUNDALINI-MANTRA-for-AWARENESS-SAT-NAM-Mantra-Meditation-with-Meaning-320-kbps",
+		"duration": "03:02:04",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/kundalini-manta-awareness.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/165"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=165"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/165\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 168,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/165\/revisions\/168"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/166"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=165"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=165"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=165"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 154,
+	"date": "2021-12-02T21:08:30",
+	"date_gmt": "2021-12-02T21:08:30",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=154"
+	},
+	"modified": "2021-12-02T21:08:55",
+	"modified_gmt": "2021-12-02T21:08:55",
+	"slug": "musica-zen-para-meditar-equilibrio-y-paz-mental-la-mejor-musica-de-relajacion-y-meditacion",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=154",
+	"title": {
+		"rendered": "Musica-Zen-para-Meditar-Equilibrio-y-Paz-Mental-La-Mejor-Musica-de-Relajacion-y-Meditacion"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Musica-Zen-para-Meditar-Equilibrio-y-Paz-Mental-La-Mejor-Musica-de-Relajacion-y-Meditacion.mp3",
+		"description": "Musica-Zen-para-Meditar-Equilibrio-y-Paz-Mental-La-Mejor-Musica-de-Relajacion-y-Meditacion",
+		"duration": "02:00:00",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/Zen-Music-for-Meditation.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/154"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=154"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/154\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 156,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/154\/revisions\/156"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=154"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=154"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=154"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 150,
+	"date": "2021-12-02T20:44:33",
+	"date_gmt": "2021-12-02T20:44:33",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=150"
+	},
+	"modified": "2021-12-02T21:19:10",
+	"modified_gmt": "2021-12-02T21:19:10",
+	"slug": "buddhist-throat-singing-monks-one-hour-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=150",
+	"title": {
+		"rendered": "Buddhist-Throat-Singing-Monks-One Hour-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Buddhist-Throat-Singing-Monks-One-Hour-320-kbps.mp3",
+		"description": "Buddhist-Throat-Singing-Monks-One Hour-320-kbps",
+		"duration": "01:00:00",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/Buddhist-Throat-Singing-Monks.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/150"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=150"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/150\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 158,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/150\/revisions\/158"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=150"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=150"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=150"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 108,
+	"date": "2021-10-18T10:39:29",
+	"date_gmt": "2021-10-18T10:39:29",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=108"
+	},
+	"modified": "2021-12-02T20:44:17",
+	"modified_gmt": "2021-12-02T20:44:17",
+	"slug": "om-chanting-417hz-removes-all-negative-blocks",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=108",
+	"title": {
+		"rendered": "OM-Chanting-417Hz-Removes-All-Negative-Blocks"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 114,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/OM-Chanting-417Hz-Removes-All-Negative-Blocks.mp3",
+		"description": "OM-Chanting-417Hz-Removes-All-Negative-Blocks",
+		"duration": "3:00:28",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/greg-rakozy-oMpAz-DN-9I-unsplash.jpg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/108"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=108"
+		}],
+		"version-history": [{
+			"count": 5,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/108\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 139,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/108\/revisions\/139"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/114"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=108"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=108"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=108"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 104,
+	"date": "2021-10-18T10:35:13",
+	"date_gmt": "2021-10-18T10:35:13",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=104"
+	},
+	"modified": "2021-11-02T12:21:28",
+	"modified_gmt": "2021-11-02T12:21:28",
+	"slug": "om-chanting-tibetan-singing-bowls-meditation-432hz-1hour-192k",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=104",
+	"title": {
+		"rendered": "OM-Chanting-Tibetan-Singing-Bowls-Meditation-432Hz-1Hour-192k"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 113,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/OM-Chanting-Tibetan-Singing-Bowls-Meditation-432Hz-1Hour-192k.mp3",
+		"description": "OM-Chanting-Tibetan-Singing-Bowls-Meditation-@432Hz-1Hour-192k",
+		"duration": "59:59",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/ian-stauffer-uftqFbfWGFY-unsplash.jpg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/104"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=104"
+		}],
+		"version-history": [{
+			"count": 5,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/104\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 140,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/104\/revisions\/140"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/113"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=104"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=104"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=104"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 99,
+	"date": "2021-10-18T10:30:06",
+	"date_gmt": "2021-10-18T10:30:06",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=99"
+	},
+	"modified": "2021-11-02T12:21:55",
+	"modified_gmt": "2021-11-02T12:21:55",
+	"slug": "enhance-self-love-healing-music-528hz-positive-energy-cleanse-ancient-frequency-music",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=99",
+	"title": {
+		"rendered": "Enhance-Self-Love-Healing-Music-528Hz-Positive-Energy-Cleanse-Ancient-Frequency-Music"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 112,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Enhance-Self-Love-Healing-Music-528Hz-Positive-Energy-Cleanse-Ancient-Frequency-Music.mp3",
+		"description": "Enhance-Self-Love-Healing-Music-528Hz-Positive-Energy-Cleanse-Ancient-Frequency-Music",
+		"duration": "3:08:07",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/max-vs-PjCh5goo-unsplash.jpg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/99"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=99"
+		}],
+		"version-history": [{
+			"count": 5,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/99\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 141,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/99\/revisions\/141"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/112"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=99"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=99"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=99"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 91,
+	"date": "2021-10-18T10:20:09",
+	"date_gmt": "2021-10-18T10:20:09",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=91"
+	},
+	"modified": "2021-11-02T12:22:22",
+	"modified_gmt": "2021-11-02T12:22:22",
+	"slug": "2-hours-4k-uhd-screensaver-the-best-4k-aquarium-for-relaxation-sleep-relax-meditation-music",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=91",
+	"title": {
+		"rendered": "2 hours 4K UHD Screensaver &#8211; The Best 4K Aquarium for Relaxation Sleep Relax Meditation Music"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 111,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [3],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/2-hours-4K-UHD-Screensaver-The-Best-4K-Aquarium-for-Relaxation-Sleep-Relax-Meditation-Music.mp3",
+		"description": "2 hours 4K UHD Screensaver - The Best 4K Aquarium for Relaxation Sleep Relax Meditation Music",
+		"duration": "1:51:46",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/sage-friedman-HS5CLnQbCOc-unsplash.jpg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/91"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=91"
+		}],
+		"version-history": [{
+			"count": 7,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/91\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 142,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/91\/revisions\/142"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/111"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=91"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=91"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=91"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]			  
+            </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mp3 Guided Meditations</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=5&per_page=100"
+            >List guided meditations (max: 100) -->
+            http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=5&per_page=100</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response: </a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+[{
+	"id": 182,
+	"date": "2022-02-01T12:38:49",
+	"date_gmt": "2022-02-01T12:38:49",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=182"
+	},
+	"modified": "2022-02-01T12:39:11",
+	"modified_gmt": "2022-02-01T12:39:11",
+	"slug": "meditacion-mindfulness-atencion-a-la-respiracion-para-calmar-cuerpo-mente-y-emociones-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=182",
+	"title": {
+		"rendered": "Meditacion-Mindfulness-Atencion-a-la-Respiracion-para-Calmar-Cuerpo-Mente-y-Emociones-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [5],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Meditacion-Mindfulness-Atencion-a-la-Respiracion-para-Calmar-Cuerpo-Mente-y-Emociones-320-kbps.mp3",
+		"description": "Meditacion-Mindfulness-Atencion-a-la-Respiracion-para-Calmar-Cuerpo-Mente-y-Emociones-320-kbps",
+		"duration": "00:22:35",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/meditacion3-mindfullness-paz-interior.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/182"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=182"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/182\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 184,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/182\/revisions\/184"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=182"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=182"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=182"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 160,
+	"date": "2021-12-26T11:59:04",
+	"date_gmt": "2021-12-26T11:59:04",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=160"
+	},
+	"modified": "2021-12-26T12:06:18",
+	"modified_gmt": "2021-12-26T12:06:18",
+	"slug": "meditacion-de-la-manana-mindfulness-para-generar-paz-interior-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=160",
+	"title": {
+		"rendered": "Meditacion-de-la-Manana-Mindfulness-para-Generar-Paz-Interior-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 161,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [5],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Meditacion-de-la-Manana-Mindfulness-para-Generar-Paz-Interior-320-kbps.mp3",
+		"description": "Meditacion-de-la-Manana-Mindfulness-para-Generar-Paz-Interior-320-kbps",
+		"duration": "00:18:35",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/meditacion3-mindfullness-paz-interior.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/160"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=160"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/160\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 164,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/160\/revisions\/164"
+		}],
+		"wp:featuredmedia": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/media\/161"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=160"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=160"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=160"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 147,
+	"date": "2021-11-27T20:06:20",
+	"date_gmt": "2021-11-27T20:06:20",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=147"
+	},
+	"modified": "2021-11-27T20:28:43",
+	"modified_gmt": "2021-11-27T20:28:43",
+	"slug": "mindfulness-meditacion-de-la-magnana-15-minutos-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=147",
+	"title": {
+		"rendered": "Mindfulness-meditacion-de-la-magnana-15-minutos-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [5],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Mindfulness-meditacion-de-la-magnana-15-minutos-320-kbps.mp3",
+		"description": "Mindfulness-meditacion-de-la-magnana-15-minutos-320-kbps",
+		"duration": "00:15:47",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/meditacion3-channel.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/147"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=147"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/147\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 149,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/147\/revisions\/149"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=147"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=147"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=147"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 144,
+	"date": "2021-11-27T19:52:18",
+	"date_gmt": "2021-11-27T19:52:18",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=144"
+	},
+	"modified": "2021-11-27T20:28:52",
+	"modified_gmt": "2021-11-27T20:28:52",
+	"slug": "meditacion-de-la-magnana-20-minutos-320-kbps",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=144",
+	"title": {
+		"rendered": "Meditacion-de-la-Magnana-20-minutos-320-kbps"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [5],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/mp3\/Meditacion-de-la-Magnana-20-minutos-320-kbps.mp3",
+		"description": "Meditacion-de-la-Magnana-20-minutos-320-kbps",
+		"duration": "00:21:11",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/meditacion3-channel.png"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/144"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=144"
+		}],
+		"version-history": [{
+			"count": 2,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/144\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 146,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/144\/revisions\/146"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=144"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=144"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=144"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]
+            </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sounds</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=4&per_page=100"
+            >List all sounds (max: 100) -->
+            http://jesidea.com/lacalma/index.php?rest_route=/wp/v2/posts&tags=4&per_page=100</a
+          >
+        </li>
+      </ul>
+
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response:</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">	
+[{
+	"id": 131,
+	"date": "2021-10-21T16:30:54",
+	"date_gmt": "2021-10-21T16:30:54",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=131"
+	},
+	"modified": "2021-11-02T12:19:33",
+	"modified_gmt": "2021-11-02T12:19:33",
+	"slug": "relaxing-bell-ding-sound",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=131",
+	"title": {
+		"rendered": "relaxing-bell-ding-sound"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [4],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/sounds\/relaxing-bell-ding-sound.mp3",
+		"description": "relaxing-bell-ding-sound",
+		"duration": "00:00:06",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/relaxing-bell-ding.jpeg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/131"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=131"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/131\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 135,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/131\/revisions\/135"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=131"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=131"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=131"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 128,
+	"date": "2021-10-21T16:27:25",
+	"date_gmt": "2021-10-21T16:27:25",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=128"
+	},
+	"modified": "2021-11-02T12:20:14",
+	"modified_gmt": "2021-11-02T12:20:14",
+	"slug": "tibetan-bell-sound",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=128",
+	"title": {
+		"rendered": "tibetan-bell-sound"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [4],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/sounds\/tibetan-bell-sound.mp3",
+		"description": "tibetan-bell-sound",
+		"duration": "00:00:17",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/tibetan-bell.jpg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/128"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=128"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/128\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 136,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/128\/revisions\/136"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=128"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=128"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=128"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 125,
+	"date": "2021-10-21T16:24:34",
+	"date_gmt": "2021-10-21T16:24:34",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=125"
+	},
+	"modified": "2021-11-02T12:20:35",
+	"modified_gmt": "2021-11-02T12:20:35",
+	"slug": "deep-gong-hit-sound-effect",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=125",
+	"title": {
+		"rendered": "deep-gong-hit-sound-effect"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [4],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/sounds\/deep-gong-hit-sound-effect.mp3",
+		"description": "deep-gong-hit-sound-effect",
+		"duration": "00:00:08",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/deep-gong.jpeg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/125"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=125"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/125\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 137,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/125\/revisions\/137"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=125"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=125"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=125"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}, {
+	"id": 122,
+	"date": "2021-10-21T16:19:23",
+	"date_gmt": "2021-10-21T16:19:23",
+	"guid": {
+		"rendered": "http:\/\/jesidea.com\/lacalma\/?p=122"
+	},
+	"modified": "2021-11-02T12:20:53",
+	"modified_gmt": "2021-11-02T12:20:53",
+	"slug": "bicycle-bell-ring-double-sound-effect",
+	"status": "publish",
+	"type": "post",
+	"link": "http:\/\/jesidea.com\/lacalma\/?p=122",
+	"title": {
+		"rendered": "bicycle-bell-ring-double-sound-effect"
+	},
+	"content": {
+		"rendered": "...",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 0,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": [],
+	"categories": [2],
+	"tags": [4],
+	"acf": {
+		"audio_url": "https:\/\/cercemap.org\/resources\/onify\/sounds\/bicycle-bell-ring-double-sound-effect.mp3",
+		"description": "bicycle-bell-ring-double-sound-effect",
+		"duration": "00:00:01",
+		"bg_img_url": "https:\/\/cercemap.org\/resources\/onify\/img\/bell-ringing.jpeg"
+	},
+	"_links": {
+		"self": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/122"
+		}],
+		"collection": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts"
+		}],
+		"about": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/types\/post"
+		}],
+		"author": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/users\/1"
+		}],
+		"replies": [{
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcomments&post=122"
+		}],
+		"version-history": [{
+			"count": 3,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/122\/revisions"
+		}],
+		"predecessor-version": [{
+			"id": 138,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=\/wp\/v2\/posts\/122\/revisions\/138"
+		}],
+		"wp:attachment": [{
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fmedia&parent=122"
+		}],
+		"wp:term": [{
+			"taxonomy": "category",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Fcategories&post=122"
+		}, {
+			"taxonomy": "post_tag",
+			"embeddable": true,
+			"href": "http:\/\/jesidea.com\/lacalma\/index.php?rest_route=%2Fwp%2Fv2%2Ftags&post=122"
+		}],
+		"curies": [{
+			"name": "wp",
+			"href": "https:\/\/api.w.org\/{rel}",
+			"templated": true
+		}]
+	}
+}]			  
+            </code></pre>
+        </div>
+      </div>
+    </section>
+
+	<section>
+		<h2>Meditation Quotes</h2>
+		<p>Provided by jesidea open api: <a href="/meditation-quotes-api.html">meditation-quotes-api</a></p>
+	</section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
