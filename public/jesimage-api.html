@@ -23,7 +23,7 @@
       sizes="16x16"
       href="/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />    
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
@@ -43,9 +43,10 @@
       </nav>
     </header>
 
-    <p>Hosted in http://jesidea.com/jesimage  - Gatsby feed of MD pages</p>
+    <p>Hosted in http://jesidea.com/jesimage - Gatsby feed of MD pages</p>
 
-    <p> All images: 
+    <p>
+      All images:
       <a href="http://jesidea.com/jesimage/jesimage-feed-1.json"
         >http://jesidea.com/jesimage/jesimage-feed-1.json</a
       >
@@ -1700,6 +1701,51 @@
         </code></pre>
       </div>
     </div>
+
+    <section>
+      <h2>Random image</h2>
+      <ul class="list-apis">
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/jesimage/.netlify/functions/jesimage-random"
+          >
+            Random image from all -->
+            http://jesidea.com/jesimage/.netlify/functions/jesimage-random</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="http://jesidea.com/jesimage/.netlify/functions/jesimage-random?album=familylog"
+          >
+            Random image from album -->
+            http://jesidea.com/jesimage/.netlify/functions/jesimage-random?album=familylog</a
+          >
+        </li>
+      </ul>
+      <p>
+        * <strong>Available Albums</strong>: familylog, family-retro-log, 
+        retro-album-noviazgo-manuel-lola, retro-album-vacaciones, video-log
+      </p>
+      <div class="dropdown-container">
+        <a href="#" class="dropdown-link">Example response</a>
+        <div class="dropdown-content">
+          <pre><code class="language-json">
+{
+	"id": "/noviazgo-lola-sin-mangas-2/",
+	"url": "https://jesidea.com/jesimage/noviazgo-lola-sin-mangas-2/",
+	"title": "Lola sin mangas 2",
+	"tags": ["noviazgo-manuel-local", "lola"],
+	"image": "/jesimage/static/f84fa84d45f477495aaa47bb45864a9d/noviazgo-lola-sin-mangas-2.png",
+	"date_published": "2022-02-06T18:08:15.136Z",
+	"date_modified": "2022-02-06T18:08:15.136Z",
+	"excerpt": ""
+}
+          </code></pre>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>

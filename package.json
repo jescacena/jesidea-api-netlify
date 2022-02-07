@@ -1,0 +1,27 @@
+{
+  "name": "jesidea-api-netlify",
+  "version": "1.0.0",
+  "description": "jesidea-api-netlify",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "netlify-cli": "^8.17.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "netlify dev --inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jescacena/jesidea-api-netlify.git"
+  },
+  "author": "Javier Escacena <javier.escacena@gmail.com> (http://jesidea.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jescacena/jesidea-api-netlify/issues"
+  },
+  "homepage": "https://github.com/jescacena/jesidea-api-netlify#readme"
+}
