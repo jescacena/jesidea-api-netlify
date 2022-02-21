@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0" />
+    <title>[jesidea-open-api] Generic Quotes</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/json.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Clean Code Quotes</h1>
+
+      <!-- Header nav -->
+      <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p>Hosted in https://cercemap.org/ for secure http</p>
+
+    <ul class="list-apis">
+      <li>
+        <a
+          target="_blank"
+          href="https://cercemap.org/resources/quotes/clean-code-quotes.json"
+          >All quotes -->
+          https://cercemap.org/resources/quotes/clean-code-quotes.json</a
+        >
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="http://api.jesidea.com/.netlify/functions/clean-code-quotes-random"
+          >Random quote -->
+          http://api.jesidea.com/.netlify/functions/clean-code-quotes-random</a
+        >
+      </li>
+    </ul>    
+    <div class="dropdown-container">
+      <a href="#" class="dropdown-link">Example response</a>
+      <div class="dropdown-content">
+        <pre><code class="language-json">
+        {
+          "name": "Clean Code Quotes",
+          "data": [
+                  {
+                    "text": "Truth can only be found in one place: the code.",
+                    "author": "Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship"
+                  },
+                  {
+                    "text": "Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.",
+                    "author": "Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship"
+                  },
+          ]
+        }
+        </code></pre>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
