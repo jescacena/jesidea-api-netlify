@@ -1,8 +1,8 @@
 {
-  "name": "clean-code-quotes-random",
+  "name": "cleancode-qandom",
   "version": "1.0.0",
   "description": "clean code quotes random",
-  "main": "clean-code-quotes-random.ts",
+  "main": "cleancode-qandom.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
