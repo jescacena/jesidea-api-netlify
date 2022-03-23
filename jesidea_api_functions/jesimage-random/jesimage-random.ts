@@ -26,11 +26,16 @@ export const handler: Handler = async (event, context) => {
   // 2.- Get random image
   var randomItem = items[Math.floor(Math.random() * items.length)];
 
+  var randomItemExpanded = Object.assign(
+    randomItem,
+    { image: `http://jesidea.com${randomItem.image}`}
+    );
+
   return {
     statusCode: 200,
     headers: {
       "Access-Control-Allow-Origin": "*", // Allow from anywhere 
     },
-    body: JSON.stringify(randomItem),
+    body: JSON.stringify(randomItemExpanded),
   }
 }
